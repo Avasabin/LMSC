@@ -71,7 +71,7 @@
             transform: scaleY(1);
    }
    .section-title p {width:100%;}
-   .welcome-section-two .row p {margin: left:0; margin-right: 0;}
+   .welcome-section-two .row p {margin-left:0; margin-right: 0;}
    .sidebarOne,.teacher-profile .teacher-sidebar .img-holder {margin-top: 50px;}
    .teacher-profile .text-warpper,.contact-us-page .contactUs-address {padding-left: 0;}
    .error-page .error-wrapper img,.error-page .error-wrapper .text {float:none;}
