@@ -149,7 +149,103 @@
  }
 
  body .main-page-wrapper {
-   overflow-x:hidden;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.about-us-section {
+  padding: 50px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-title {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+.title-underline {
+  width: 50px;
+  height: 3px;
+  background-color: #4CAF50;
+  border: none;
+  margin-top: 10px;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.text {
+  flex: 1;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.text h3 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-style: italic;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.text p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.apply-now {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.apply-now:hover {
+  background-color: #45a049;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+      flex-direction: column;
+  }
+  .image, .text {
+      margin-right: 0;
+  }
+  .text {
+      margin-top: 20px;
+  }
  }
 
  h1,h2,h3,h4,h5,h6,p,ul { margin:0;padding: 0;}
