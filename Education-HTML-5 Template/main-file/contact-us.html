@@ -184,32 +184,51 @@
 							<div class="contact-us-form">
 								<h3>Send A Message</h3>
 								<p>Your email address will not be published.</p>
-								<form action="inc/sendemail.php" class="form-validation" autocomplete="off">
+								<form action="inc/sendemail.php" class="contact-form" autocomplete="off">
 									<div class="row">
-										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-											<input name="name" type="text" placeholder="First Name">
+										<div class="col-lg-4 col-md-4 col-sm-12">
+											<label for="first_name">First Name:</label>
+											<input id="first_name" name="first_name" type="text" placeholder="John">
 										</div>
-										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-											<input name="name" type="text" placeholder="Middle Name">
+										<div class="col-lg-4 col-md-4 col-sm-12">
+											<label for="middle_name">Middle Name:</label>
+											<input id="middle_name" name="middle_name" type="text" placeholder="Doe">
 										</div>
-										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-											<input name="name" type="text" placeholder="Last Name">
+										<div class="col-lg-4 col-md-4 col-sm-12">
+											<label for="last_name">Last Name:</label>
+											<input id="last_name" name="last_name" type="text" placeholder="Smith">
 										</div>
-										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-											<input name="email" type="email" placeholder="Email">
+										<div class="col-lg-6 col-md-6 col-sm-12">
+											<label for="email">Your Email:</label>
+											<input id="email" name="email" type="email" placeholder="example@example.com">
 										</div>
-										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-											<input name="sub" type="number" placeholder="Phone Number">
+										<div class="col-lg-6 col-md-6 col-sm-12">
+											<label for="phone_number">Your Phone Number:</label>
+											<input id="phone_number" name="phone_number" type="tel" placeholder="0426777777" pattern="[0-9]{10}">
 										</div>
-										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-											<input name="sub" type="text" placeholder="Subject">
+										<div class="col-lg-12">
+											<label for="subject">Subject:</label>
+											<input id="subject" name="subject" type="text" placeholder="Enter Subject">
 										</div>
-										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-											<textarea name="message" placeholder="Write Message"></textarea>
-											<button class="tran3s p-color-bg themehover" title="Send">send message</button>
+										<div class="col-lg-12">
+											<label for="message">Your Message:</label>
+											<textarea id="message" name="message" placeholder="Enter Your Message"></textarea>
+										</div>
+										<div class="col-lg-12">
+											<button class="btn p-color-bg tran3s themehover" title="Send">Send Message</button>
 										</div>
 									</div>
 								</form>
+								
+								
+								
+								
+								
+								
+								
+								
+
+								
 
 								<!-- Contact alert -->
 								<div class="alert_wrapper" id="alert_success">
