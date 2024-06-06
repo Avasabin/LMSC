@@ -132,6 +132,14 @@
        url('../fonts/font-awesome/fonts/fontawesome-webfont.svg') format('svg'); /* Legacy iOS */
  }
 
+/*logo Logo Logo Logo Logo Logo */
+
+.logo {
+  width: 141.5px;  /* Change this value to resize the logo */
+  height: auto;  /* Maintain aspect ratio */
+}
+
+
  body {
  	font-family: 'Open Sans', sans-serif;
  	font-weight: normal;
