@@ -582,11 +582,23 @@ header.inner-header .top-header {
   transition: all .3s ease-in-out;
 }
 
+.main-menu-wrapper .nav>li.dropdown-holder .sub-menu #it-courses-sub-sub-menu{
+  top:4.1rem;
+}
+
+.main-menu-wrapper .nav>li.dropdown-holder .sub-menu #mang-courses-sub-sub-menu{
+  top:8.15rem;
+}
+
 /* Show sub-sub-menu on hover */
 .main-menu-wrapper .nav>li.dropdown-holder .sub-menu li:hover .sub-sub-menu {
   opacity: 1;
   visibility: visible;
   transform: scaleY(1);
+}
+
+.main-menu-wrapper .nav>li.dropdown-holder .sub-menu li .sub-sub-menu {
+ padding-right: 5%;
 }
 
 /* Ensure sub-menu items with f,urther sub-menus are styled correctly */
