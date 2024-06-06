@@ -662,6 +662,45 @@ header.inner-header .top-header {
 .main-menu-wrapper .nav>li.dropdown-holder .sub-menu li a:hover {
   color:#fff;
 }
+
+/* (((((((((((sub-sub-menus)))))) */
+.main-menu-wrapper .nav>li.dropdown-holder .sub-menu .sub-sub-menu {
+  position: absolute;
+  left: 220px; /* Adjust as needed */
+  top: 0;
+  width: auto;
+  white-space: nowrap;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transform: scaleY(0);
+  transform-origin: 0% 0%;
+  transition: all .3s ease-in-out;
+}
+
+/* Show sub-sub-menu on hover */
+.main-menu-wrapper .nav>li.dropdown-holder .sub-menu li:hover .sub-sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+}
+
+/* Ensure sub-menu items with f,urther sub-menus are styled correctly */
+.main-menu-wrapper .nav>li.dropdown-holder .sub-menu li a.subdropdown-holder {
+  padding-right: 20px; /* Space for indicating further submenu */
+  position: relative;
+}
+
+.main-menu-wrapper .nav>li.dropdown-holder .sub-menu li a.subdropdown-holder:after {
+  content: '>'; /* Indicator for sub-menu */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
 /* ((((((((((((((((((((( Sticky Menu ))))))))))))))))))))*/
 @keyframes menu_sticky {
   0%   {margin-top:-120px;opacity: 0;}
