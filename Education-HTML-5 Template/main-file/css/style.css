@@ -191,12 +191,6 @@
   margin-top: 10px;
 }
 
-.content {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
 .image {
   flex: 1;
   margin-right: 20px;
@@ -229,6 +223,11 @@
 .text p {
   margin-bottom: 20px;
   color: #666;
+}
+
+.pdf-canvas {
+  width: 10%;
+  height: 200px;
 }
 
 @media screen and (max-width: 768px) {
