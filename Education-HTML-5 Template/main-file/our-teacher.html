@@ -145,10 +145,16 @@
 			<div class="inner-page-banner">
 				<div class="opacity">
 					<div class="container">
+						<br>
+						<br>
+						<br>
 						<h2>CALENDAR</h2>
+						
 					</div> <!-- /.container -->
 				</div> <!-- /.opacity -->
 			</div> <!-- /.inner-page-banner -->
+
+			
 
 
 			
@@ -156,19 +162,52 @@
 			<!-- Page Breadcrum __________________________ -->
 			<div class="page-breadcrum">
 				<div class="container">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li>-</li>
-						<li>Calendar</li>
-					</ul>
+					<h1>Academic Calendar 2024</h1>
+					<p>Click the link below to view or download the academic calendar:</p>
+					<div class="pdf-container" onclick="openPDF()">
+						<!-- Placeholder for PDF rendering -->
+						<canvas id="pdf-canvas" class="pdf-canvas"></canvas>
+					</div>
 				</div> <!-- /.container -->
 			</div> <!-- /.page-breadcrum -->
+		
+			<!-- Include PDF.js library -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
+			<script>
+				// URL to the PDF
+				const pdfUrl = 'Files/2024-calendar.pdf';
+		
+				// Load the PDF and render the first page
+				pdfjsLib.getDocument(pdfUrl).promise.then(pdfDoc => {
+					pdfDoc.getPage(1).then(page => {
+						const canvas = document.getElementById('pdf-canvas');
+						const context = canvas.getContext('2d');
+		
+						// Set scale and viewport
+						const scale = 0.5; // Adjust scale to control thumbnail size
+						const viewport = page.getViewport({ scale });
+		
+						// Set canvas dimensions
+						canvas.width = viewport.width;
+						canvas.height = viewport.height;
+		
+						// Render PDF page into canvas context
+						const renderContext = {
+							canvasContext: context,
+							viewport: viewport
+						};
+						page.render(renderContext);
+					});
+				});
+		
+				// Function to open the PDF in a new tab
+				function openPDF() {
+					window.open(pdfUrl, '_blank');
+				}
+			</script>
 
-			<div class="container">
-				<ul>
-					<li>Calendar</li>
-				</ul>
-			</div> <!-- /.container -->
+	
+			
 
 
 			<!-- SubsCribe Banner ___________________ -->
