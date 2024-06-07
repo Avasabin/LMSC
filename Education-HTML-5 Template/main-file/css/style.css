@@ -158,11 +158,19 @@
   padding: 50px 0;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
+.about-us-section a {
+  width:230px;
+  line-height: 45px;
+  text-align: center;
   margin: 0 auto;
-  padding: 20px;
+  background: #f6882f;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.about-us-section a:hover {
+  background: #fff;
+  color:#F6882F;
 }
 
 .section-title {
@@ -178,7 +186,7 @@
 .title-underline {
   width: 50px;
   height: 3px;
-  background-color: #4CAF50;
+  background-color: #f6882f;
   border: none;
   margin-top: 10px;
 }
@@ -214,26 +222,13 @@
 
 .quote {
   font-style: italic;
-  color: #4CAF50;
+  color: #f6882f;
   margin-bottom: 20px;
 }
 
 .text p {
   margin-bottom: 20px;
   color: #666;
-}
-
-.apply-now {
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.apply-now:hover {
-  background-color: #45a049;
 }
 
 @media screen and (max-width: 768px) {
