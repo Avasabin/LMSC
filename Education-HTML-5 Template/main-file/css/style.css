@@ -638,9 +638,11 @@ header.inner-header .top-header {
   z-index: 1;
   font-size: 13px;
 }
+
 .main-menu-wrapper .nav>li.dropdown-holder .sub-menu li:last-child a {
   border:none;
 }
+
 .main-menu-wrapper .nav>li.dropdown-holder .sub-menu li a:before {
   content: '';
   width:0;
@@ -650,9 +652,11 @@ header.inner-header .top-header {
   left:0;
   z-index: -1;
 }
+
 .main-menu-wrapper .nav>li.dropdown-holder .sub-menu li a:hover:before {
   width: 100%;
 }
+
 .main-menu-wrapper .nav>li.dropdown-holder .sub-menu li a:hover {
   color:#fff;
 }
