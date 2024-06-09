@@ -1,0 +1,270 @@
+<!-- Latest News ___________________________ -->
+	        <div class="latest-news wow fadeInUp theme-bg-color">
+	        	<div class="container">
+	        		<div class="theme-title">
+	        			<h2>latest news</h2>
+	        			<p>Something for education news,latest news feed</p>
+	        		</div>
+
+	        		<div class="post-wrapper row">
+	        			<div class="single-post wow fadeInUp col-lg-4 col-md-4 col-sm-6 col-xs-6">
+	        					<div class="img-holder">
+	        						<div class="date wow fadeInUp p-color-bg">12 <span>Sep</span></div>
+	        						<img src="images/blog/1.jpg" alt="Image">
+	        						<a href="blog-details.html" class="tran4s"></a>
+	        					</div>
+	        					<div class="text-wrapper">
+	        						<div class="text tran4s">
+	        							<a href="blog-details.html">New Chicago school budget </a>
+	        							<p>Education is the process of facilitating learning. Knowledge kills, values, beliefs, and habits of a group of people are trans- ferred  </p>
+	        						</div> <!-- /.text -->
+	        					</div> <!-- /.text-wrapper -->
+	        			</div> <!-- /.single-post -->
+
+	        			<div class="single-post wow fadeInUp col-lg-4 col-md-4 col-sm-6 col-xs-6">
+	        					<div class="img-holder">
+	        						<div class="date wow fadeInUp p-color-bg">12 <span>Sep</span></div>
+	        						<img src="images/blog/2.jpg" alt="Image">
+	        						<a href="blog-details.html" class="tran4s"></a>
+	        					</div>
+	        					<div class="text-wrapper">
+	        						<div class="text tran4s">
+	        							<a href="blog-details.html">New Chicago school budget </a>
+	        							<p>Education is the process of facilitating learning. Knowledge kills, values, beliefs, and habits of a group of people are trans- ferred  </p>
+	        						</div> <!-- /.text -->
+	        					</div> <!-- /.text-wrapper -->
+	        			</div> <!-- /.single-post -->
+
+	        			<div class="single-post wow fadeInUp col-lg-4 col-md-4 col-sm-6 col-xs-6">
+	        					<div class="img-holder">
+	        						<div class="date wow fadeInUp p-color-bg">12 <span>Sep</span></div>
+	        						<img src="images/blog/3.jpg" alt="Image">
+	        						<a href="blog-details.html" class="tran4s"></a>
+	        					</div>
+	        					<div class="text-wrapper">
+	        						<div class="text tran4s">
+	        							<a href="blog-details.html">New Chicago school budget </a>
+	        							<p>Education is the process of facilitating learning. Knowledge kills, values, beliefs, and habits of a group of people are trans- ferred  </p>
+	        						</div> <!-- /.text -->
+	        					</div> <!-- /.text-wrapper -->
+	        			</div> <!-- /.single-post -->
+	        		</div> <!-- /.post-wrapper -->
+	        	</div> <!-- /.container -->
+	        </div> <!-- /.latest-news -->
+
+
+
+	        <!-- Testimonial And FAQ Section _________________________ -->
+	        <div class="test-faq">
+	        	<div class="container">
+	        		<div class="row">
+	        			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 testimonial wow fadeInLeft">
+	        				<div class="wrapper">
+	        					<h3>TESTIMONIALS</h3>
+	        					<div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+								  	  <!-- Indicators -->
+									  <ol class="carousel-indicators">
+									    <li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
+									    <li data-target="#testimonial-carousel" data-slide-to="1"></li>
+									    <li data-target="#testimonial-carousel" data-slide-to="2"></li>
+									  </ol>
+
+									  <!-- Wrapper for slides -->
+									  <div class="carousel-inner" role="listbox">
+									    <div class="item active">
+									      <div class="single-box theme-bg-color">
+									      		<div class="img round-border"><img src="images/home/2.png" alt="Image"></div>
+									      		<h6>ghost riad <span>(Sir.Principal)</span></h6>
+									      		<p>The personalized attention I received at La Maison Scholar College made all the difference. The faculty and staff genuinely care about student success and go above and beyond to ensure every student thrives.</p>
+									      </div> <!-- /.single-box -->
+
+									      <div class="single-box theme-bg-color">
+									      		<div class="img round-border"><img src="images/home/3.png" alt="Image"></div>
+									      		<h6>Masum nodi <span>(Sir.Principal Fohinni)</span></h6>
+									      		<p>Attending La Maison Scholar College was one of the best decisions I ever made. The vibrant campus community and diverse student body enriched my college experience in ways I never imagined.</p>
+									      </div> <!-- /.single-box -->
+									    </div>
+
+									    <div class="item">
+									      <div class="single-box theme-bg-color">
+									      		<div class="img round-border"><img src="images/home/2.png" alt="Image"></div>
+									      		<h6>ghost riad <span>(Sir.Principal)</span></h6>
+									      		<p>I am grateful for the opportunities La Maison Scholar College provided me. The hands-on learning experiences and dedicated professors prepared me for success in my career.</p>
+									      </div> <!-- /.single-box -->
+
+									      <div class="single-box theme-bg-color">
+									      		<div class="img round-border"><img src="images/home/3.png" alt="Image"></div>
+									      		<h6>Masum nodi <span>(Sir.Principal Fohinni)</span></h6>
+									      		<p>My experience at La Maison Scholar College was truly transformative. The supportive faculty and rigorous curriculum helped me achieve my academic and professional goals.</p>
+									      </div> <!-- /.single-box -->
+									    </div>
+									</div>
+								</div> <!-- /#testimonial-carousel -->
+	        				</div> <!-- /.wrapper -->
+	        			</div> <!-- /.testimonial -->
+
+	        			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 faq wow fadeInRight">
+	        				<div class="wrapper">
+	        					<h3>Frequently Asked Questions</h3>
+	        					<!-- ________________ Panel _______________ -->
+	        					<div class="faq_panel">
+									<div class="panel-group theme-accordion" id="accordion">
+									  <div class="panel">
+									    <div class="panel-heading active-panel">
+									      <h6 class="panel-title">
+									        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+											What programs does La Maison Scholar College offer?</a>
+									      </h6>
+									    </div>
+									    <div id="collapse1" class="panel-collapse collapse in">
+									      <div class="panel-body">
+									      	<p>La Maison Scholar College offers a diverse range of programs across various disciplines, including Hospitality Management, Information Technology, Business Management, and more. Visit our website for a comprehensive list of programs.</p>
+									      </div>
+									    </div>
+									  </div> <!-- /panel 1 -->
+									  <div class="panel">
+									    <div class="panel-heading">
+									      <h6 class="panel-title">
+									        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+											How can I apply to La Maison Scholar College?</a>
+									      </h6>
+									    </div>
+									    <div id="collapse2" class="panel-collapse collapse">
+									      <div class="panel-body">
+									      	<p>You can apply to La Maison Scholar College by visiting our website and completing the online application form. Alternatively, you can contact our admissions office for assistance with the application process.</p>
+									      </div>
+									    </div>
+									  </div> <!-- /panel 2 -->
+									  <div class="panel">
+									    <div class="panel-heading">
+									      <h6 class="panel-title">
+									        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+											What are the admission requirements for undergraduate programs?</a>
+									      </h6>
+									    </div>
+									    <div id="collapse3" class="panel-collapse collapse">
+									      <div class="panel-body">
+									      	<p>Admission requirements vary depending on the program you are applying for. Generally, undergraduate applicants need to submit high school transcripts, standardized test scores (if applicable), letters of recommendation, and a personal statement. Additional requirements may apply to specific programs.</p>
+									      </div>
+									    </div>
+									  </div> <!-- /panel 3 -->
+
+
+
+									</div> <!-- end #accordion -->
+								</div> <!-- End of .faq_panel -->
+	        				</div> <!-- /.wrapper -->
+	        			</div> <!-- /.faq -->
+	        		</div> <!-- /.row -->
+	        	</div> <!-- /.container -->
+	        </div> <!-- /.test-faq -->
+
+    Footer
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 footer-event">
+	        					<h4>Latest events</h4>
+
+	        					<div id="footer-event-carousel" class="carousel slide" data-ride="carousel">
+								  	  <!-- Indicators -->
+									  <ol class="carousel-indicators">
+									    <li data-target="#footer-event-carousel" data-slide-to="0" class="active"></li>
+									    <li data-target="#footer-event-carousel" data-slide-to="1"></li>
+									    <li data-target="#footer-event-carousel" data-slide-to="2"></li>
+									  </ol>
+
+									  <!-- Wrapper for slides -->
+									  <div class="carousel-inner" role="listbox">
+									    <div class="item active">
+									      <ul>
+									      	<li>
+									      		<div class="date p-color-bg">27 <span>Dec</span></div>
+									      		<a href="event-details.html"><h6>Learning Management</h6></a>
+									      		<ul>
+					        						<li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
+					        						<li><i class="fa fa-tags" aria-hidden="true"></i> La Maison Scholar College</li>
+					        					</ul>
+									      	</li>
+
+									      	<li>
+									      		<div class="date p-color-bg">19 <span>Dec</span></div>
+									      		<a href="event-details.html"><h6>LEARN COUSES ONLINE</h6></a>
+									      		<ul>
+					        						<li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
+					        						<li><i class="fa fa-tags" aria-hidden="true"></i> La Maison Scholar College</li>
+					        					</ul>
+									      	</li>
+
+									      	<li>
+									      		<div class="date p-color-bg">07 <span>Dec</span></div>
+									      		<a href="event-details.html"><h6>COURSES FOR FREE GED</h6></a>
+									      		<ul>
+					        						<li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
+					        						<li><i class="fa fa-tags" aria-hidden="true"></i> La Maison Scholar College</li>
+					        					</ul>
+									      	</li>
+									      </ul>
+									    </div> <!-- /.item -->
+
+									    <div class="item">
+									      <ul>
+									      	<li>
+									      		<div class="date p-color-bg">27 <span>Dec</span></div>
+									      		<a href="event-details.html"><h6>Learning Management</h6></a>
+									      		<ul>
+					        						<li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
+					        						<li><i class="fa fa-tags" aria-hidden="true"></i> La Maison Scholar College</li>
+					        					</ul>
+									      	</li>
+
+									      	<li>
+									      		<div class="date p-color-bg">19 <span>Dec</span></div>
+									      		<a href="event-details.html"><h6>LEARN COUSES ONLINE</h6></a>
+									      		<ul>
+					        						<li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
+					        						<li><i class="fa fa-tags" aria-hidden="true"></i> La Maison Scholar College</li>
+					        					</ul>
+									      	</li>
+
+									      	<li>
+									      		<div class="date p-color-bg">07 <span>Dec</span></div>
+									      		<a href="event-details.html"><h6>COURSES FOR FREE GED</h6></a>
+									      		<ul>
+					        						<li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
+					        						<li><i class="fa fa-tags" aria-hidden="true"></i> La Maison Scholar College</li>
+					        					</ul>
+									      	</li>
+									      </ul>
+									    </div> <!-- /.item -->
+
+									    <div class="item">
+									      <ul>
+									      	<li>
+									      		<div class="date p-color-bg">27 <span>Dec</span></div>
+									      		<a href="event-details.html"><h6>Learning Management</h6></a>
+									      		<ul>
+					        						<li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
+					        						<li><i class="fa fa-tags" aria-hidden="true"></i> La Maison Scholar College</li>
+					        					</ul>
+									      	</li>
+
+									      	<li>
+									      		<div class="date p-color-bg">19 <span>Dec</span></div>
+									      		<a href="event-details.html"><h6>LEARN COUSES ONLINE</h6></a>
+									      		<ul>
+					        						<li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
+					        						<li><i class="fa fa-tags" aria-hidden="true"></i> La Maison Scholar College</li>
+					        					</ul>
+									      	</li>
+
+									      	<li>
+									      		<div class="date p-color-bg">07 <span>Dec</span></div>
+									      		<a href="event-details.html"><h6>COURSES FOR FREE GED</h6></a>
+									      		<ul>
+					        						<li><i class="fa fa-clock-o" aria-hidden="true"></i> 10am - 05pm</li>
+					        						<li><i class="fa fa-tags" aria-hidden="true"></i> La Maison Scholar College</li>
+					        					</ul>
+									      	</li>
+									      </ul>
+									    </div> <!-- /.item -->  
+									</div>
+								</div> <!-- /#footer-event-carousel -->
+	        				</div> <!-- /.footer-event -->
