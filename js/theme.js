@@ -295,6 +295,16 @@ function mobileDropdown () {
 
 
 
+// Toggle sub-menu on click
+ function toggleSubMenu() {
+     $('.dropdown-holder > a').click(function(event) {
+         event.preventDefault();
+         var $submenu = $(this).next('.sub-menu');
+         $('.sub-menu').not($submenu).slideUp();
+         $submenu.slideToggle();
+     });
+ }
+
 
 // Accordion panel
 function themeAccrodion () {
