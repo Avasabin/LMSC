@@ -488,6 +488,10 @@ header.inner-header .bootstrap-select.btn-group .dropdown-toggle .caret:before {
 header.inner-header .top-header div.right-side>ul>li a {
   color:#333333;
 }
+header.inner-header .top-header div.left-side>ul>li a:hover {
+  text-decoration: underline;
+}
+
 header.inner-header .top-header {
   background: transparent;
 }
