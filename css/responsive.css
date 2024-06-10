@@ -40,8 +40,8 @@
    .navbar-collapse {box-shadow: none;}
    .navbar-collapse.collapse.in,.navbar-toggle,.main-menu-wrapper .nav>li.dropdown-holder .fa {display: block !important;}
    .main-menu-wrapper {margin-right: -15px;margin-left: -15px;}
-   .main-menu-wrapper .logo {position: absolute; top:0; left:15px;z-index: 9;}
-   .main-menu-wrapper.fixed .logo {left:15px;}
+   .main-menu-wrapper .logo {position: absolute; top:0; margin-left:15px;z-index: 9;}
+   .main-menu-wrapper.fixed .logo {left:15px; margin-top: 10px;}
    .main-menu-wrapper form {position: absolute;left:50%;top:30px;margin: 0 0 0 -112px; z-index: 9;}
    .navbar,.navbar-nav {float:none;}
    .navbar-header {float:none;}
@@ -128,7 +128,7 @@
 
 @media (max-width: 767px) {
     .main-menu-wrapper .logo img {width:60%;}
-    .navbar-toggle {margin: 13px 0;}
+    .navbar-toggle {margin: 13px 5px;}
     .main-menu-wrapper form {top:10px;}
     .theme-manage-area .item1,.course-details-page .course-details-content .sub-text ul.st-requirements-list li {width: 100%;}
     .course-search-option .input-one,.course-search-option .input-two,.course-search-option .input-three {width:50%; margin-bottom: 20px;}

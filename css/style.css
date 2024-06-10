@@ -136,7 +136,7 @@
 
 .logo {
   width: 220px;  /* Change this value to resize the logo */
-  height: fit-content;  /* Maintain aspect ratio */
+  height: auto;  /* Maintain aspect ratio */
   margin-top: 15px;
 }
 
