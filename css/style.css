@@ -3124,3 +3124,43 @@ text-transform: uppercase;
   color:#fff;
   display: block;
 }
+
+.radio-group input[type="radio"] {
+  width: 15px; /* Adjust the width as needed */
+  height: 18px; /* Adjust the height as needed */
+  margin-right: 5px; /* Adjust the spacing between radio buttons */
+  vertical-align: middle; /* Align radio buttons vertically */
+  
+  
+
+}
+
+.radio-group label {
+  display: inline-block; /* Display labels inline */
+  margin-bottom: 6px; /* Adjust the spacing between radio buttons */
+  vertical-align: middle; /* Align labels vertically */
+  
+}
+
+.radio-group input[type="radio"] + span {
+  vertical-align: middle; /* Align labels vertically with radio buttons */
+  line-height: 2;
+}
+
+
+#country_code {
+  width: 80px;
+  height: 28px;
+  margin-right: 5px;
+  background-color: white; /* Default background color */
+  color: black; /* Default text color */
+  border: 1px solid #ccc; /* Default border color */
+  border-radius: 3px; /* Add rounded corners */
+}
+
+/* Change background and text color on hover */
+#country_code:hover {
+  background-color: #F6882F; /* Background color on hover */
+  color: white; /* Text color on hover */
+}
+
