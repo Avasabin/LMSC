@@ -8,7 +8,7 @@
 		<!-- For Resposive Device -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>EDUTECH- Responsive html5 template</title>
+		<title>LMSC-Contact-Us</title>
 
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
@@ -200,38 +200,96 @@
 								<form action="inc/sendemail.php" class="contact-form" autocomplete="off">
 									<div class="row">
 										<div class="col-lg-4 col-md-4 col-sm-12">
-											<label for="first_name">First Name:</label>
-											<input id="first_name" name="first_name" type="text" placeholder="John">
+											<label for="first_name">First Name: <span class="required">*</span></label>
+											<input id="first_name" name="first_name" type="text" placeholder="" required>
 										</div>
 										<div class="col-lg-4 col-md-4 col-sm-12">
-											<label for="middle_name">Middle Name:</label>
-											<input id="middle_name" name="middle_name" type="text" placeholder="Doe">
+											<label for="middle_name">Middle Name: <span class="required">*</span></label>
+											<input id="middle_name" name="middle_name" type="text" placeholder="" required>
 										</div>
 										<div class="col-lg-4 col-md-4 col-sm-12">
-											<label for="last_name">Last Name:</label>
-											<input id="last_name" name="last_name" type="text" placeholder="Smith">
+											<label for="last_name">Last Name: <span class="required">*</span></label>
+											<input id="last_name" name="last_name" type="text" placeholder="" required>
 										</div>
-										<div class="col-lg-6 col-md-6 col-sm-12">
-											<label for="email">Your Email:</label>
-											<input id="email" name="email" type="email" placeholder="example@example.com">
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<label for="email">Email: <span class="required">*</span></label>
+											<input id="email" name="email" type="email" placeholder="example@example.com" required>
 										</div>
-										<div class="col-lg-6 col-md-6 col-sm-12">
-											<label for="phone_number">Your Phone Number:</label>
-											<input id="phone_number" name="phone_number" type="tel" placeholder="0426777777" pattern="[0-9]{10}">
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<label for="phone_number">Phone Number: <span class="required">*</span></label>
+											<input id="phone_number" name="phone_number" type="tel" placeholder="0426777777" pattern="[0-9]{10}" required>
 										</div>
+										<div class="col-lg-12">
+											<label for="subject">Subject:</label>
+											<input id="subject" name="subject" type="text" placeholder="">
+										</div>
+
+
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<label><span class="required">*</span> I am From:</label>
+											<div class="checkbox-group">
+												<label class="checkbox-inline">
+													<input type="checkbox" name="location_from" value="Australian"> I am Australian and looking to study
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" name="location_from" value="Another country"> I am from another country but currently in Australia and am looking to study
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" name="location_from" value="Outside Australia"> I am outside of Australia looking to study
+												</label>
+											</div>
+										</div>
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<label><span class="required">*</span> I want to study:</label>
+											<div class="checkbox-group">
+												<label class="checkbox-inline">
+													<input type="checkbox" name="study_mode" value="Face to face"> Face to face in Australia
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" name="study_mode" value="E-learning"> E-learning - Online
+												</label>
+											</div>
+										</div>
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<label><span class="required">*</span> Delivery Location:</label>
+											<div class="checkbox-group">
+												<label class="checkbox-inline">
+													<input type="checkbox" name="delivery_location" value="Brisbane"> Sydney
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" name="delivery_location" value="Other"> Other
+												</label>
+											</div>
+										</div>
+										<style>
+											.checkbox-inline input[type="checkbox"] {
+												width: 18px; /* Adjust the width as needed */
+												height: 18px; /* Adjust the height as needed */
+												margin-right: 6px; /* Adjust the spacing between checkbox and label */
+											}
+									
+											.checkbox-group label {
+												display: block;
+												margin-bottom: 5px; /* Adjust the spacing between checkboxes */
+											}
+										</style>
+
+
 										<div class="col-lg-12">
 											<label for="subject">Subject:</label>
 											<input id="subject" name="subject" type="text" placeholder="Enter Subject">
 										</div>
 										<div class="col-lg-12">
 											<label for="message">Your Message:</label>
-											<textarea id="message" name="message" placeholder="Enter Your Message"></textarea>
+											<textarea id="message" name="message" placeholder=""></textarea>
 										</div>
 										<div class="col-lg-12">
 											<button class="btn p-color-bg tran3s themehover" title="Send">Send Message</button>
 										</div>
 									</div>
 								</form>
+
+								
 								
 								
 								
