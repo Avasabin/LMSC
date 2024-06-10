@@ -40,14 +40,16 @@
    .navbar-collapse {box-shadow: none;}
    .navbar-collapse.collapse.in,.navbar-toggle,.main-menu-wrapper .nav>li.dropdown-holder .fa {display: block !important;}
    .main-menu-wrapper {margin-right: -15px;margin-left: -15px;}
-   .main-menu-wrapper .logo {position: absolute; top:0; left:15px;z-index: 9;}
-   .main-menu-wrapper.fixed .logo {left:15px;}
+   .main-menu-wrapper .logo {position: absolute; top:0; margin-left:15px;z-index: 9;}
+   .main-menu-wrapper.fixed .logo {left:15px; margin-top: 10px;}
    .main-menu-wrapper form {position: absolute;left:50%;top:30px;margin: 0 0 0 -112px; z-index: 9;}
    .navbar,.navbar-nav {float:none;}
    .navbar-header {float:none;}
    .main-menu-wrapper .nav>li {float:none; margin: 0;}
    .main-menu-wrapper .nav>li>a {line-height: 40px;padding-left: 15px;border-bottom:1px solid #fff;}
-   .main-menu-wrapper .nav>li:last-child>a {border:none;}
+   .main-menu-wrapper .nav>li:last-child>a {border:1px solid #F6882F; color:#F6882F; display: block;
+    background: transparent;}
+   .main-menu-wrapper .nav>li:last-child { margin: 0; width: 140px; }
    .navbar-collapse,.navbar-collapse.collapse.in {padding: 15px;}
    .navbar-nav {border:1px dashed #fff;}
    .main-menu-wrapper .nav>li.dropdown-holder .sub-menu li a {padding-left: 35px;}
@@ -126,7 +128,7 @@
 
 @media (max-width: 767px) {
     .main-menu-wrapper .logo img {width:60%;}
-    .navbar-toggle {margin: 13px 0;}
+    .navbar-toggle {margin: 13px 5px;}
     .main-menu-wrapper form {top:10px;}
     .theme-manage-area .item1,.course-details-page .course-details-content .sub-text ul.st-requirements-list li {width: 100%;}
     .course-search-option .input-one,.course-search-option .input-two,.course-search-option .input-three {width:50%; margin-bottom: 20px;}
@@ -137,7 +139,7 @@
     .subscribe-banner form {width:100%;}
     .subscribe-banner input {width:90%; margin: 0 auto; display: block; float:none;}
     .subscribe-banner button {margin: 20px auto 0 auto; display: block; float:none;}
-    header {position: relative;background: #cd2122;}
+    header {position: relative;background: #F6882F;}
     .inner-page-banner .opacity {padding-top: 90px;}
     .event-details-page .event-details-content .sub-text .table-fix {width: 100%; margin-bottom: 40px;}
     .event-details-page .event-details-content .sub-text #google-map {width: 94%; margin-right: 3%;}
