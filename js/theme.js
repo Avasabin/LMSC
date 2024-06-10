@@ -339,6 +339,7 @@ jQuery(document).on('ready', function() {
      closeSuccessAlert ();
      mobileDropdown ();
      themeAccrodion ();
+     toggleSubMenu();
   })(jQuery);
 });
 
