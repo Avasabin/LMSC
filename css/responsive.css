@@ -47,7 +47,9 @@
    .navbar-header {float:none;}
    .main-menu-wrapper .nav>li {float:none; margin: 0;}
    .main-menu-wrapper .nav>li>a {line-height: 40px;padding-left: 15px;border-bottom:1px solid #fff;}
-   .main-menu-wrapper .nav>li:last-child>a {border:none;}
+   .main-menu-wrapper .nav>li:last-child>a {border:1px solid #F6882F; color:#F6882F; display: block;
+    background: transparent;}
+   .main-menu-wrapper .nav>li:last-child { margin: 0; width: 140px; }
    .navbar-collapse,.navbar-collapse.collapse.in {padding: 15px;}
    .navbar-nav {border:1px dashed #fff;}
    .main-menu-wrapper .nav>li.dropdown-holder .sub-menu li a {padding-left: 35px;}
@@ -137,7 +139,7 @@
     .subscribe-banner form {width:100%;}
     .subscribe-banner input {width:90%; margin: 0 auto; display: block; float:none;}
     .subscribe-banner button {margin: 20px auto 0 auto; display: block; float:none;}
-    header {position: relative;background: #cd2122;}
+    header {position: relative;background: #F6882F;}
     .inner-page-banner .opacity {padding-top: 90px;}
     .event-details-page .event-details-content .sub-text .table-fix {width: 100%; margin-bottom: 40px;}
     .event-details-page .event-details-content .sub-text #google-map {width: 94%; margin-right: 3%;}
