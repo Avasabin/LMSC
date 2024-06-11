@@ -204,6 +204,19 @@
     .teacher-profile .teacher-sidebar .teachers-bio p,.teacher-profile .teacher-sidebar .teachers-bio ul {padding-left: 30px;}
     .teacher-profile .text-warpper .row ul {margin-bottom: 40px;}
     .error-page .error-wrapper {padding: 0;}
+    #banner-video{
+        margin-top:30rem;
+        height: 100%;
+        
+    }
+
+    .tp-caption{
+        top:100%;
+        font-size: 2rem;
+    }
+    .welcome-section{
+        margin-top: 10%;
+    }
 }
 /*(min-width: 992px) and (max-width: 1199px)*/
 
@@ -221,6 +234,16 @@
     .course-v2 .single-course .img-holder {width:70%;}
     .course-details-page .course-details-content .sub-text.course-curriculum {padding-right: 20px;}
     .error-page .error-wrapper h2 span.opps {left:auto; right:27%;}
+    
+    
+    #banner-video{
+        margin-top:20rem;
+        /* height: 100%; */
+    }
+    #banner>.tp-caption{
+        top:200px;
+        font-size: 3rem;
+    }
 }
 /*(min-width: 768px) and (max-width: 991px)*/
 
@@ -257,6 +280,7 @@
     .error-page .error-wrapper h2 span.opps {position: static;}
     #banner h1 {font-size: 30px;line-height: 40px;}
     #banner h5 {font-size: 14px;}
+    
 }
 /*(max-width: 767px)*/
 
@@ -310,6 +334,29 @@
    .main-menu-wrapper.fixed .logo {top:0;}
    .scroll-top {right:5px; bottom: 15px;}
    .course-v2 .single-course .course-heading ul li {display: block;margin: 0 0 5px 0;}
+   
+   
+    #banner .tp-caption {
+        
+        top: 18%; 
+        left: 10%;    
+        font-size: 3rem;
+        z-index: 3;
+    }
+
+  #banner .tp-caption-btn{
+    top :21%;
+    left: 10%;
+  }
+
+  #banner a {
+    
+    line-height: 10px !important;
+    width:105px;
+    font-size: 1rem;
+    padding: 1rem 0.6rem;
+    height: auto;
+  }
 }
 
 @media (max-width: 450px) {
@@ -334,4 +381,28 @@
     .faq .faq_panel .panel-group .panel-heading a:before {left:10px; line-height: 0;top:50%;}
     .error-page .error-wrapper h2 {font-size: 70px;line-height: 45px;}
     .error-page .error-wrapper p {margin-top: 20px;}
+
+
+    #banner .tp-caption {
+        
+        top: 20%; 
+        left: 10%;    
+        font-size: 2.5rem;
+        z-index: 3;
+    }
+
+
+    #banner .tp-caption-btn{
+        top :25%;
+        left: 10%;
+      }
+    
+      #banner a {
+        
+        line-height: 10px !important;
+        width:105px;
+        font-size: 0.8rem;
+        padding: 1rem 0.6rem;
+        height: auto;
+      }
 }

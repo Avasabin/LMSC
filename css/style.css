@@ -763,21 +763,57 @@ header.inner-header .top-header {
   padding: 0;
 }
 /*========================= Banner ===================*/
+
+#banner{
+  position: relative; 
+  overflow: hidden; 
+  height: 100vh;
+}
+
+#banner #banner-video{
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+
 #banner h5,#banner h1, #banner a {
   color:#fff;
   text-transform: uppercase;
 }
-#banner h1.center-item {
-  text-align: center;
-}
+
 #banner h1 {
   line-height: 68px;
 }
+
+#banner .tp-caption {
+  position: absolute; 
+  top: 80%; 
+  left: 12%; 
+  transform: translateY(-100%); 
+  color: #fff; 
+  font-size: 8rem;
+  font-weight: 700; 
+  z-index: 6;
+}
+
+#banner .tp-caption-btn{
+  position: absolute; 
+  top: 90%; 
+  left: 12%; 
+  transform: translateY(-50%); 
+  z-index: 3;
+  
+}
+
 #banner a {
   line-height: 50px !important;
   width:175px;
   text-align: center;
   border:1px solid #F6882F;
+  background-color: #F6882F; 
+  color: #fff; 
+  padding: 0.7rem 1.2rem; 
+  text-decoration: none;
   -webkit-transition: all .35s ease-in-out !important;
      -moz-transition: all .35s ease-in-out !important;
       -ms-transition: all .35s ease-in-out !important;
@@ -787,8 +823,22 @@ header.inner-header .top-header {
 #banner a.course-button:hover {
   background: #F6882F;
 }
-#banner a.buy-button:hover {
-  background: transparent;
+/* #banner .buy-button {
+  background-color: #F6882F; 
+  color: #fff; 
+  padding: 0.7rem 1.2rem; 
+  text-decoration: none;
+} */
+#banner .buy-button:hover {
+  background-color: white;
+  color: #F6882F ;  
+}
+
+
+
+
+.welcome-section{
+  margin-top: 15%;
 }
 
 /*==================== Manage Section =================*/
