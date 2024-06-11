@@ -8,7 +8,7 @@
 		<!-- For Resposive Device -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>About Us - La Maison</title>
+		<title>Pre-Enrolment - La Maison</title>
 
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
@@ -145,54 +145,23 @@
 					</ul>
 				</div> <!-- /.container -->
 			</div> <!-- /.page-breadcrum -->
-
-			<!-- Welcome Section ___________________________ -->
-	        <div class="welcome-section-two">
-	        	<div class="container">
-	        		<div class="section-title wow fadeInUp">
-	        			<h2 class="p-color">Welcome to La Maison Scholar College</h2>
-	        			<h5>We are glad you're here.</h5>
-	        		</div> <!-- /.section-title -->
-	        		
-	        	</div> <!-- /.container -->
-	        </div> <!-- /.welcome-section-two -->
-
-			<div class="about-us-section">
-				<div class="container">
-					<div class="section-title">
-						<h2>About Us</h2>
-						<hr class="title-underline">
-					</div>
-					<div class="content">
-						<div class="image">
-							<img src="images/about-us-student-image.jpg" alt="Students">
-						</div>
-						<div class="text">
-							<h3>Our Story</h3>
-							<p class="quote">"We strive every day to become Australasian region's premier quality private education establishment and the preferred Australian Vocational training provider."</p>
-							<p>La Maison Scholar College (LMSC) was established to provide high-quality education in hospitality, information technology, and management. Our commitment to excellence is reflected in our state-of-the-art facilities and dedicated faculty.</p>
-							<p>At LMSC, we understand that each student has unique learning styles and career aspirations. Our programs are designed to offer personalized guidance and practical skills to ensure that our students achieve their professional goals.</p>
-							<a href="#" class="tran3s">Apply Now</a>
-						</div>
-					</div>
+			<div class="container">
+				<div class="pdf-container" onclick="openStudentPDF()">
+					<!-- Placeholder for PDF rendering -->
+					<canvas id="pdf-canvas-student" class="pdf-canvas" style="cursor: pointer;"></canvas>
+					<ul><li>Student Prospectus V1.0 2024</li></ul>
+				</div>
+				<div class="pdf-container" onclick="openInternationalPDF()">
+					<!-- Placeholder for PDF rendering -->
+					<canvas id="pdf-canvas-international" class="pdf-canvas" style="cursor: pointer;"></canvas>
+					<ul><li>International Student Handbook v3.0</li></ul>
 				</div>
 			</div>
-	        
+			
 
-			<!-- SubsCribe Banner ___________________ -->
-	        <div class="subscribe-banner p-color-bg wow fadeInUp">
-	        	<div class="container">
-	        		<h3>Subscribe now</h3>
-	        		<p>Receive weekly newsletter with educational materials, new courses, most popular posts, popular books and much more!</p>
-	        		<form action="#" class="clear-fix">
-	        			<input type="email" class="float-left wow fadeInLeft" placeholder="Email address">
-	        			<button class="float-left tran3s wow fadeInRight">Subcribe</button>
-	        		</form>
-	        	</div>
-	        </div>
+			
 
-
-
+			<!-- Welcome Section ___________________________ -->
 	        <!-- Footer ______________________________ -->
 	        <!-- Footer ______________________________ -->
 	        <footer>
@@ -260,6 +229,41 @@
 
 
 		<!-- Js File_________________________________ -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
+		<script>
+			function loadAndRenderPDF(pdfUrl, canvasId, scale = 1.0) {
+				pdfjsLib.getDocument(pdfUrl).promise.then(pdfDoc => {
+					pdfDoc.getPage(1).then(page => {
+						const canvas = document.getElementById(canvasId);
+						const context = canvas.getContext('2d');
+						const viewport = page.getViewport({ scale });
+						canvas.width = viewport.width;
+						canvas.height = viewport.height;
+						const renderContext = {
+							canvasContext: context,
+							viewport: viewport
+						};
+						page.render(renderContext);
+					});
+				});
+			}
+
+			function openStudentPDF() {
+				window.open('Files/Pre-Enrolment-Files/Student Prospectus V1.0 2024.pdf', '_blank');
+			}
+
+			function openInternationalPDF() {
+				window.open('Files/Pre-Enrolment-Files/International Student Handbook v3.0.pdf', '_blank');
+			}
+
+			// Call the function for each PDF file with custom scale values
+			loadAndRenderPDF('Files/Pre-Enrolment-Files/Student Prospectus V1.0 2024.pdf', 'pdf-canvas-student', 0.5);
+			loadAndRenderPDF('Files/Pre-Enrolment-Files/International Student Handbook v3.0.pdf', 'pdf-canvas-international', 0.5);
+		</script>
+
+
+
+
 
 		<!-- j Query -->
 		<script type="text/javascript" src="vendor/jquery-2.1.4.js"></script>

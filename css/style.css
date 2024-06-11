@@ -1568,7 +1568,7 @@ header.inner-header .top-header {
 /*======================= Footer ==============*/
 footer {
   background: #000;
-  padding-top: 88px;
+  padding-top: 85px;
 }
 footer .top-footer h4,footer .top-footer p,footer .top-footer a,footer .top-footer ul li,footer .top-footer h6 {
   color:#fff;
@@ -1620,7 +1620,7 @@ footer .top-footer .footer-contact ul {
 }
 footer .top-footer .footer-contact ul li {
   display: block;
-  border:1px solid #212121;
+  border:1px solid #000;
   width:298px;
   height:auto;
   position: relative;
@@ -1717,27 +1717,52 @@ footer .footer-event .carousel-indicators .active, footer .footer-event .carouse
 }
 footer .footer-event .carousel-indicators {
   text-align: left;
-  left:-2px;
+  left:-px;
   bottom: -6px;
 }
 footer .bottom-footer {
+  display: flex;
+  justify-content: center; /* Aligns items horizontally at the center */
+  align-items: center; /* Aligns items vertically at the center */
   background: #090909;
-  text-align: center;
-  padding: 25px 0 25px 0;
+  padding: 25px; /* Overall padding */
   margin-top: 75px;
+  box-sizing: border-box; /* Includes padding in width/height */
 }
+
 footer .bottom-footer p {
-  color:#c5c5c5;
-}
-footer .bottom-footer p span {
+  color: #c5c5c5;
+  margin: 0;
   font-size: 14px;
+  text-align: center; /* Aligns text within the flex items */
 }
+
+footer .bottom-footer .left-text {
+  /* Adjust width or max-width as needed */
+  max-width: 50%; /* Example: Limits width to half of the container */
+}
+
+footer .bottom-footer .right-text {
+  /* Adjust width or max-width as needed */
+  max-width: 50%; /* Example: Limits width to half of the container */
+}
+
+footer .bottom-footer .p-color {
+  color: #F6882F; /* Orange for left-side specific text */
+}
+
+footer .bottom-footer .code-color {
+  color: #F6882F; /* Orange color for right-side specific text */
+}
+
 footer .bottom-footer a {
-  color:#F6882F;
+  color: #F6882F;
 }
+
 footer .bottom-footer a:hover {
-  color:#fff;
+  color: #fff;
 }
+
 /*================== Inner Page Main Banner ==============*/
 .inner-page-banner {
   background: url(../images/inner-page/1.jpg) no-repeat center;
@@ -1760,7 +1785,7 @@ footer .bottom-footer a:hover {
 .page-breadcrum ul {
   border-bottom:1px solid #dddada;
   padding: 12px 0;
-  margin-bottom: 112px;
+  margin-bottom: 15px;
 }
 .page-breadcrum ul li {
   display: inline-block;
@@ -3213,4 +3238,57 @@ text-transform: uppercase;
   background-color: #F6882F; /* Background color on hover */
   color: white; /* Text color on hover */
 }
+
+/* Footer RTO and CRICOS Code */
+
+.container .pdf-container {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px; /* Add padding to the PDF container */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.container .pdf-container .pdf-canvas {
+  width: 15%; /* Expand canvas to fill container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+.pdf-container {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(60% - 20px); /* Adjust the width as needed, considering padding */
+  min-width: 500px; /* Set a minimum width */
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0;
+  float: left;
+}
+
+/* Apply a media query for larger screens */
+@media (max-width: 3000px) {
+  .pdf-container {
+    width: calc(150% - 40px); /* Adjust the width for smaller screens */
+  }
+}
+
+.pdf-icon {
+  width: 400px; /* Set a fixed width for the icon */
+  height: auto; /* Let the height adjust proportionally */
+}
+
+.pdf-canvas {
+  width: calc(150% - 50px); /* Adjust the canvas width to accommodate the icon width */
+  border: 1px solid #ccc;
+}
+
+.pdf-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+}
+
+
 

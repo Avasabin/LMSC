@@ -1,0 +1,27 @@
+lmsc.edu.au.,3600,IN,SOA,ns1.netregistry.net.,dmain.netregistry.net.,2024060605,86400,7200,604800,7200
+,3600,IN,A,202.124.241.178
+www,3600,IN,A,202.124.241.178
+student,3600,IN,A,202.124.241.178
+,3600,IN,NS,ns1.netregistry.net.
+,3600,IN,NS,ns2.netregistry.net.
+,3600,IN,NS,ns3.netregistry.net.
+,3600,IN,MX,0,lmsc-edu-au.mail.protection.outlook.com.
+student,3600,IN,MX,0,student-lmsc-edu-au.mail.protection.outlook.com.
+pop,3600,IN,CNAME,pop3.netregistry.net.
+pop3,3600,IN,CNAME,pop3.netregistry.net.
+webmail,3600,IN,CNAME,webmail.netregistry.net.
+imap,3600,IN,CNAME,imap.netregistry.net.
+smtp,3600,IN,CNAME,smtp.netregistry.net.
+autodiscover,3600,IN,CNAME,autodiscover.outlook.com.
+enterpriseregistration,3600,IN,CNAME,enterpriseregistration.windows.net.
+enterpriseenrollment,3600,IN,CNAME,enterpriseenrollment-s.manage.microsoft.com.
+selector1._domainkey,3600,IN,CNAME,selector1-lmsc-edu-au._domainkey.ImpelEducation.onmicrosoft.com.
+selector2._domainkey,3600,IN,CNAME,selector2-lmsc-edu-au._domainkey.ImpelEducation.onmicrosoft.com.
+autodiscover.student,3600,IN,CNAME,autodiscover.outlook.com.
+selector1._domainkey.student,3600,IN,CNAME,selector1-student-lmsc-edu-au._domainkey.ImpelEducation.onmicrosoft.com.
+selector2._domainkey.student,3600,IN,CNAME,selector2-student-lmsc-edu-au._domainkey.ImpelEducation.onmicrosoft.com.
+enterpriseregistration.student,3600,IN,CNAME,enterpriseregistration.windows.net.
+enterpriseenrollment.student,3600,IN,CNAME,enterpriseenrollment-s.manage.microsoft.com.
+,3600,IN,TXT,"MS=ms36509589"
+,3600,IN,TXT,"v=spf1 include:spf.protection.outlook.com -all"
+student,3600,IN,TXT,"v=spf1 include:spf.protection.outlook.com -all"
