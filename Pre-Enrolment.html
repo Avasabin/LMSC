@@ -145,14 +145,21 @@
 					</ul>
 				</div> <!-- /.container -->
 			</div> <!-- /.page-breadcrum -->
-
 			<div class="container">
-				<h2>Pre-Enrolment</h2>
-				<div class="pdf-container" onclick="openPDF()">
+				<div class="pdf-container" onclick="openStudentPDF()">
 					<!-- Placeholder for PDF rendering -->
-					<canvas id="pdf-canvas" class="pdf-canvas" style="cursor: pointer;"></canvas>
+					<canvas id="pdf-canvas-student" class="pdf-canvas" style="cursor: pointer;"></canvas>
+					<ul><li>Student Prospectus V1.0 2024</li></ul>
+				</div>
+				<div class="pdf-container" onclick="openInternationalPDF()">
+					<!-- Placeholder for PDF rendering -->
+					<canvas id="pdf-canvas-international" class="pdf-canvas" style="cursor: pointer;"></canvas>
+					<ul><li>International Student Handbook v3.0</li></ul>
 				</div>
 			</div>
+			
+
+			
 
 			<!-- Welcome Section ___________________________ -->
 	        <!-- Footer ______________________________ -->
@@ -222,6 +229,41 @@
 
 
 		<!-- Js File_________________________________ -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
+		<script>
+			function loadAndRenderPDF(pdfUrl, canvasId, scale = 1.0) {
+				pdfjsLib.getDocument(pdfUrl).promise.then(pdfDoc => {
+					pdfDoc.getPage(1).then(page => {
+						const canvas = document.getElementById(canvasId);
+						const context = canvas.getContext('2d');
+						const viewport = page.getViewport({ scale });
+						canvas.width = viewport.width;
+						canvas.height = viewport.height;
+						const renderContext = {
+							canvasContext: context,
+							viewport: viewport
+						};
+						page.render(renderContext);
+					});
+				});
+			}
+
+			function openStudentPDF() {
+				window.open('Files/Pre-Enrolment-Files/Student Prospectus V1.0 2024.pdf', '_blank');
+			}
+
+			function openInternationalPDF() {
+				window.open('Files/Pre-Enrolment-Files/International Student Handbook v3.0.pdf', '_blank');
+			}
+
+			// Call the function for each PDF file with custom scale values
+			loadAndRenderPDF('Files/Pre-Enrolment-Files/Student Prospectus V1.0 2024.pdf', 'pdf-canvas-student', 0.5);
+			loadAndRenderPDF('Files/Pre-Enrolment-Files/International Student Handbook v3.0.pdf', 'pdf-canvas-international', 0.5);
+		</script>
+
+
+
+
 
 		<!-- j Query -->
 		<script type="text/javascript" src="vendor/jquery-2.1.4.js"></script>

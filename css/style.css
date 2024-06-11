@@ -1735,7 +1735,7 @@ footer .bottom-footer a:hover {
 .page-breadcrum ul {
   border-bottom:1px solid #dddada;
   padding: 12px 0;
-  margin-bottom: 112px;
+  margin-bottom: 15px;
 }
 .page-breadcrum ul li {
   display: inline-block;
@@ -3190,4 +3190,55 @@ text-transform: uppercase;
 }
 
 /* Footer RTO and CRICOS Code */
+
+.container .pdf-container {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px; /* Add padding to the PDF container */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.container .pdf-container .pdf-canvas {
+  width: 15%; /* Expand canvas to fill container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+.pdf-container {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(60% - 20px); /* Adjust the width as needed, considering padding */
+  min-width: 500px; /* Set a minimum width */
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0;
+  float: left;
+}
+
+/* Apply a media query for larger screens */
+@media (max-width: 3000px) {
+  .pdf-container {
+    width: calc(150% - 40px); /* Adjust the width for smaller screens */
+  }
+}
+
+.pdf-icon {
+  width: 400px; /* Set a fixed width for the icon */
+  height: auto; /* Let the height adjust proportionally */
+}
+
+.pdf-canvas {
+  width: calc(150% - 50px); /* Adjust the canvas width to accommodate the icon width */
+  border: 1px solid #ccc;
+}
+
+.pdf-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+}
+
+
 
