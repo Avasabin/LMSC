@@ -32,6 +32,29 @@
     footer .top-footer [class*="col-"] {margin-bottom: 50px;}
     footer .bottom-footer {margin-top: 45px;}
     .sidebarOne .wrapper,.sidebarOne .wrapper-left {padding: 0;}
+    
+    #banner .tp-caption {
+        
+        top: 50%; 
+        left: 10%;    
+        font-size: 7.5rem;
+        z-index: 3;
+    }
+
+
+    #banner .tp-caption-btn{
+        top :53%;
+        left: 10%;
+    }
+    
+    #banner a {   
+        line-height: 2.5rem !important;
+        width:calc(105*1.5);
+        font-size: 2rem;
+        padding: 2rem 0.8rem;
+        height: auto;
+      }
+
 }
 /*(max-width: 1199px)*/
 
@@ -177,6 +200,29 @@
    .contact-us-page .contactUs-address {
         margin-top: 80px;
     }
+
+    #banner .tp-caption {
+        
+        top: 50%; 
+        left: 10%;    
+        font-size: 7.5rem;
+        z-index: 3;
+    }
+
+
+    #banner .tp-caption-btn{
+        top :53%;
+        left: 10%;
+    }
+    
+    #banner a {   
+        line-height: 2.5rem !important;
+        width:calc(105*1.5)px;
+        font-size: 2rem;
+        padding: 2rem 0.8rem;
+        height: auto;
+      }
+
 }
 /*(max-width: 991px)*/
 
@@ -210,13 +256,28 @@
         
     }
 
-    .tp-caption{
-        top:100%;
-        font-size: 2rem;
+    #banner .tp-caption {
+        
+        top: 44%; 
+        left: 10%;    
+        font-size: 6.5rem;
+        z-index: 3;
     }
-    .welcome-section{
-        margin-top: 10%;
+
+
+    #banner .tp-caption-btn{
+        top :48%;
+        left: 10%;
     }
+    
+    #banner a {   
+        line-height: 2.5rem !important;
+        width:calc(105*1.5)px ;
+        font-size: 2.5rem;
+        padding: 2rem 0.8rem;
+        height: auto;
+      }
+    
 }
 /*(min-width: 992px) and (max-width: 1199px)*/
 
@@ -240,10 +301,29 @@
         margin-top:20rem;
         /* height: 100%; */
     }
-    #banner>.tp-caption{
-        top:200px;
-        font-size: 3rem;
+    
+    #banner .tp-caption {
+        
+        top: 40%; 
+        left: 10%;    
+        font-size: 5.5rem;
+        z-index: 3;
     }
+
+
+    #banner .tp-caption-btn{
+        top :43%;
+        left: 10%;
+      }
+    
+      #banner a {
+        
+        line-height: 2rem !important;
+        width:calc(105*1.5)px;
+        font-size: 1.8rem;
+        padding: 1.5rem 0.6rem;
+        height: auto;
+      }
 }
 /*(min-width: 768px) and (max-width: 991px)*/
 
@@ -280,6 +360,29 @@
     .error-page .error-wrapper h2 span.opps {position: static;}
     #banner h1 {font-size: 30px;line-height: 40px;}
     #banner h5 {font-size: 14px;}
+    
+    #banner .tp-caption {
+        
+        top: 50%; 
+        left: 10%;    
+        font-size: 5.5rem;
+        z-index: 3;
+    }
+
+
+    #banner .tp-caption-btn{
+        top :58%;
+        left: 10%;
+      }
+    
+      #banner a {
+        
+        line-height: 2rem !important;
+        width:calc(105*1.5);
+        font-size: 1.8rem;
+        padding: 1.5rem 0.6rem;
+        height: auto;
+      }
     
 }
 /*(max-width: 767px)*/
@@ -340,7 +443,7 @@
         
         top: 18%; 
         left: 10%;    
-        font-size: 3rem;
+        font-size: 2.8rem;
         z-index: 3;
     }
 
@@ -385,15 +488,15 @@
 
     #banner .tp-caption {
         
-        top: 20%; 
+        top: 17%; 
         left: 10%;    
-        font-size: 2.5rem;
+        font-size: 1.7rem;
         z-index: 3;
     }
 
 
     #banner .tp-caption-btn{
-        top :25%;
+        top :20%;
         left: 10%;
       }
     
