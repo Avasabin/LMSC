@@ -8,7 +8,7 @@
 		<!-- For Resposive Device -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>Calendar - La Maison</title>
+		<title>Courses - La Maison</title>
 
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
@@ -31,7 +31,7 @@
 	</head>
 
 	<body>
-		<div class="main-page-wrapper">
+		<div class="main-page-wrapper about-us-v1-page">
 
 
 			<!-- Header _________________________________ -->
@@ -77,7 +77,7 @@
 							   <li><a href="about-us.html">About Us</a>
 							   </li>
 							   
-							   <li class="dropdown-holder"><a href="#">Courses</a>
+							   <li class="dropdown-holder current-page-item"><a href="#">Courses</a>
 									<ul class="sub-menu">
 										<li><a href="#" class="tran3s subdrowdown-holder">Hospitality</a>
 											<ul class="sub-sub-menu">
@@ -108,7 +108,7 @@
 									</ul>
 							   </li>
 
-							   <li class="dropdown-holder current-page-item"><a href="#">Calendar</a>
+							   <li class="dropdown-holder"><a href="#">Calendar</a>
 									<ul class="sub-menu">
 										<li><a href="calendar.html" class="tran3s">Calendar Year 2024</a></li>
 									</ul>
@@ -129,8 +129,7 @@
 			<div class="inner-page-banner">
 				<div class="opacity">
 					<div class="container">
-						<h2>CALENDAR</h2>
-						
+						<h2>Courses</h2>
 					</div> <!-- /.container -->
 				</div> <!-- /.opacity -->
 			</div> <!-- /.inner-page-banner -->
@@ -141,19 +140,37 @@
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li>-</li>
-						<li>Calendar</li>
+						<li>Courses</li>
 					</ul>
 				</div> <!-- /.container -->
 			</div> <!-- /.page-breadcrum -->
-			
-			<div class="container">
-				<h2>Academic Calendar 2024</h2>
-				<div class="pdf-container" onclick="openPDF()">
-					<!-- Placeholder for PDF rendering -->
-					<canvas id="pdf-canvas" class="pdf-canvas" style="cursor: pointer;"></canvas>
+
+			<div class="about-us-section">
+				<div class="section-title">
+				  <h2>Courses</h2>
+				  <div class="title-underline"></div>
 				</div>
-			</div>
-			
+				<div class="flex-container">
+				  <div class="image">
+					<img src="images/about-us-student-image.jpg" alt="About Us Image">
+				  </div>
+				  <div class="text">
+					<p>Welcome to La Maison Scholar College (LMSC)! We're located at Suite 203/118 Church Street Parramatta NSW 2150, Australia. At LMSC, we offer courses in hospitality, information technology, and management sectors..</p>
+					<p>"Empowering students for a brighter future."</p>
+					<h3>Why Choose Us?</h3>
+					<p>Choosing LMSC means opting for high-quality education that's relevant to industry needs. Our campus boasts comfortable facilities, modern equipment, and resources, ensuring a conducive learning environment.</p>
+					<h3>Our Vision</h3>
+					<p>LMSC will strive to be one of the most preferred educational institutes in Australia by ensuring highest standards of integrity, diversity and inclusion, and intellectual and creative excellence.</p>
+					<a href="contact-us.html" class="button">Apply Now</a>
+				  </div>
+				</div>
+			  </div>
+			  
+	        
+
+
+
+
 			<!-- SubsCribe Banner ___________________ -->
 	        <div class="subscribe-banner p-color-bg wow fadeInUp">
 	        	<div class="container">
@@ -233,40 +250,7 @@
 
 
 		<!-- Js File_________________________________ -->
-		<!-- Include PDF.js library -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
-		<script>
-			// URL to the PDF
-			const pdfUrl = 'Files/2024-calendar.pdf';
-	
-			// Load the PDF and render the first page
-			pdfjsLib.getDocument(pdfUrl).promise.then(pdfDoc => {
-				pdfDoc.getPage(1).then(page => {
-					const canvas = document.getElementById('pdf-canvas');
-					const context = canvas.getContext('2d');
-	
-					// Set scale and viewport
-					const scale = 0.6; // Adjust scale to control thumbnail size
-					const viewport = page.getViewport({ scale });
-	
-					// Set canvas dimensions
-					canvas.width = viewport.width;
-					canvas.height = viewport.height;
-	
-					// Render PDF page into canvas context
-					const renderContext = {
-						canvasContext: context,
-						viewport: viewport
-					};
-					page.render(renderContext);
-				});
-			});
-	
-			// Function to open the PDF in a new tab
-			function openPDF() {
-				window.open(pdfUrl, '_blank');
-			}
-		</script>
+
 		<!-- j Query -->
 		<script type="text/javascript" src="vendor/jquery-2.1.4.js"></script>
 
