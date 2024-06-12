@@ -3331,7 +3331,7 @@ text-transform: uppercase;
   height: 50vh;
 }
 .container .pdf-container {
-  flex: 6;
+  
   margin-right: 10px;
   padding: 10px; /* Add padding to the PDF container */
   box-sizing: border-box; /* Include padding in width calculation */
