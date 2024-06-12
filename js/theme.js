@@ -305,6 +305,14 @@ function mobileDropdown () {
      });
  }
 
+ function toggleSubSubMenu() {
+  $('.subdrowdown-holder ').click(function(event) {
+      event.preventDefault();
+      var $subsubmenu = $(this).next('.sub-sub-menu');
+      $('.sub-sub-menu').not($subsubmenu).slideUp();
+      $subsubmenu.slideToggle();
+  });
+}
 
 // Accordion panel
 function themeAccrodion () {
@@ -340,6 +348,7 @@ jQuery(document).on('ready', function() {
      mobileDropdown ();
      themeAccrodion ();
      toggleSubMenu();
+     toggleSubSubMenu();
   })(jQuery);
 });
 

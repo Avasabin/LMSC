@@ -621,7 +621,7 @@ header.inner-header .top-header {
   align-items: center;
 }
 
-.main-menu-wrapper .nav>li:last-child a:hover {
+.main-menu-wrapper .nav li:last-child a:hover {
   background: #F6882F;
   color: #fff;
 }
@@ -3323,29 +3323,40 @@ text-transform: uppercase;
 
 /*########## Footer RTO and CRICOS Code###################### */
 
+.pre-enrolment > .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
 .container .pdf-container {
-  flex: 1;
+  flex: 6;
   margin-right: 10px;
   padding: 10px; /* Add padding to the PDF container */
   box-sizing: border-box; /* Include padding in width calculation */
+  min-width:25%;
+  /* height: 80%; */
 }
 
 .container .pdf-container .pdf-canvas {
-  width: 15%; /* Expand canvas to fill container */
+  width: 60%; /* Expand canvas to fill container */
   height: auto; /* Maintain aspect ratio */
+  margin: 1% 25% ;
+}
+
+.container .pdf-container h4{
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-left: 25%;
+  word-wrap: none;
+
 }
 
 
-.pdf-container {
-  display: inline-block;
-  vertical-align: top;
-  width: calc(60% - 20px); /* Adjust the width as needed, considering padding */
-  min-width: 500px; /* Set a minimum width */
-  box-sizing: border-box;
-  padding: 10px;
-  margin: 0;
-  float: left;
-}
+
+
+
 
 /* Apply a media query for larger screens */
 @media (max-width: 3000px) {
