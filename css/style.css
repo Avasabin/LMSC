@@ -18,7 +18,7 @@
 /*   02 - Global stlye  */
 /*   03 - Header  */
 /*   04 - Theme Menu */
-/*   05 - Theme Banner */
+  /* 05 - Theme Banner - Slider - Video */
 /*   06 - Manage Section */
 /*   07 - Course Finder  */
 /*   08 - Welcome Section  */
@@ -838,7 +838,7 @@ header.inner-header .top-header {
 
 
 .welcome-section{
-  margin-top: 15%;
+  margin-top: 5%;
 }
 
 /*==================== Manage Section =================*/
