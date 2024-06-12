@@ -765,16 +765,18 @@ header.inner-header .top-header {
 /*========================= Banner ===================*/
 
 /* Default Styles for Larger Screens */
+/* Base Styles */
+/* Base Styles */
 #banner {
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  height: 100vh; /* Full viewport height */
 }
 
 #banner #banner-video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Cover entire banner area */
 }
 
 #banner h5, #banner h1, #banner a {
@@ -788,20 +790,22 @@ header.inner-header .top-header {
 
 #banner .tp-caption {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 12%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); /* Center vertically */
   color: #fff;
-  font-size: 4rem; /* Adjusted for readability */
+  font-size: 8rem;
   font-weight: 700;
   z-index: 6;
+  text-align: left; /* Ensure text alignment */
 }
 
 #banner .tp-caption-btn {
   position: absolute;
-  top: 70%; /* Adjusted for better alignment */
+  top: 85%; /* Positioned below the text */
   left: 12%;
-  z-index: 3;
+  transform: translateY(-50%);
+  z-index: 7; /* Higher than text */
 }
 
 #banner a {
@@ -816,18 +820,13 @@ header.inner-header .top-header {
   transition: all .35s ease-in-out !important;
 }
 
-#banner a.course-button:hover {
-  background: #F6882F;
-}
-
-#banner .buy-button:hover {
-  background-color: white;
+#banner a:hover {
+  background: white;
   color: #F6882F;
 }
 
 .welcome-section {
-  margin-top: 0;
-  padding: 5% 0; /* Adjusted padding */
+  margin-top: 05%;
 }
 
 /* Media Queries for Mobile View */
@@ -838,39 +837,49 @@ header.inner-header .top-header {
 
   #banner .tp-caption {
     font-size: 2rem; /* Smaller font size for mobile */
-    top: 50%; /* Center vertically */
+    top: 50%; /* Adjust vertical alignment */
+    transform: translateY(-800%);
+    line-height: 1.4rem; /* Ensure readability */
   }
 
   #banner .tp-caption-btn {
-    top: 80%; /* Position button correctly */
+    top: 70%; /* Position button correctly */
+    transform: translateY(+750%);
   }
 
   .welcome-section {
-    margin-top: 5%; /* Reduce margin to minimize gap */
-    padding: 10% 0; /* Increased padding for mobile readability */
+    margin-top: 5%;
+    padding: 10% 0;
   }
 }
 
 /* Media Queries for Small Mobile Screens */
 @media (max-width: 480px) {
   #banner {
-    height: 40vh; /* Further reduce height for small screens */
+    height: 40vh;
   }
 
   #banner .tp-caption {
-    font-size: 1.5rem; /* Further reduce font size */
-    top: 50%; /* Adjust vertical centering */
+    font-size: 1.2rem; /* Further reduce font size */
+    top: 70%; /* Adjust vertical centering */
+    transform: translateY(+150%); /* Adjust translation */
+    line-height: 1.2rem; /* Adjust line height */
   }
 
   #banner .tp-caption-btn {
-    top: 75%; /* Adjust button position */
+    top: 70%; /* Move button lower */
+    transform: translateY(+650%);
   }
 
   .welcome-section {
-    margin-top: 5%; /* Further reduce margin */
+    margin-top: 5%; /* Reduce margin */
     padding: 15% 0; /* Adjust padding */
   }
 }
+
+
+
+
 
 
 /*==================== Manage Section =================*/
