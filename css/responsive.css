@@ -465,6 +465,10 @@
    .container .pdf-container h4{
     font-size: 1.8rem;
    }
+
+   .fees >.fees-container table{
+    margin: 0 4%;
+   }
 }
 
 @media (max-width: 480px) {
