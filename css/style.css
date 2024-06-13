@@ -161,29 +161,33 @@ video {
 
 /* ################About Us CSS for under About Us Template */
 
-
-    /* General section styling */
+/* General section styling */
 /* General section styling */
 .about-us-section {
   background-color: #fff; /* Set the background to white */
-  padding: 50px 20px; /* Padding for the section */
+  padding: 30px 20px; /* Padding for the section */
   font-family: Arial, sans-serif;
   max-width: 1200px; /* Constrain the section to a maximum width */
   margin: 0 auto; /* Center the section horizontally */
+  display: flex; /* Optional: Use flexbox for better control */
+  flex-direction: column; /* Stack items vertically */
+  gap: 10px; /* Control the gap between child elements */
 }
 
 /* Section title styling */
 .section-title {
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Reduce the bottom margin */
   position: relative;
+  padding: 0; /* Ensure no padding */
 }
 
 .section-title h2 {
   font-size: 2em; /* Adjust font size as needed */
   color: #333; /* Adjust color */
   font-weight: bold; /* Make the text bold */
-  margin: 0;
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
 }
 
 .section-title h2::after {
@@ -195,14 +199,29 @@ video {
   margin-top: 5px; /* Space between the text and the underline */
 }
 
-/* Text styling */
+/* Text container styling */
 .text {
   color: #666; /* Adjust text color */
   line-height: 1.6; /* Line height for readability */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+}
+
+.text h3 {
+  margin: 10px 0; /* Adjust margins */
+  color: #333;
+  font-size: 1.9em;
 }
 
 .text p {
-  margin-bottom: 25px; /* Space between paragraphs */
+  margin: 10px 0; /* Space between paragraphs */
+}
+
+/* Additional styling for alignment (Optional) */
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
