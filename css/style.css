@@ -3131,7 +3131,7 @@ text-transform: uppercase;
   margin-right: 6px;
 }
 .course-details-page .course-details-content .sub-text {
-  padding-left: 40px;
+  padding-left: 30px;
 }
 .course-details-page .course-details-content .sub-text h4 {
   font-family: 'Lato', sans-serif;
@@ -3366,6 +3366,96 @@ text-transform: uppercase;
   line-height: 70px;
   color:#fff;
   display: block;
+}
+
+/* {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+} */
+
+/* ########################Course -= Explore The Course ########################## */
+
+
+.course-container {
+  width: 95%;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  text-align: center;
+  color: #403C37;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  background-color: #403C37;
+}
+
+.tablink {
+  background-color: #403C37;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  width: 20%;
+  text-align: center;
+}
+
+.tablink:hover {
+  background-color: #57524d;
+}
+
+.tablink.active {
+  background-color: #F6882F;
+}
+
+.tabcontent {
+  display: none;
+  padding: 20px;
+  border-top: none;
+}
+
+.tabcontent h2 {
+  color: #403C37;
+}
+
+.tabcontent ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.tabcontent ul li {
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #F6882F;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 /* ################ Contact US Form ####################### */
 .radio-group input[type="radio"] {
