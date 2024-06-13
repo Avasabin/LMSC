@@ -3539,6 +3539,7 @@ text-transform: uppercase;
 
 .fees >.fees-container table thead{
   background-color: #F6882F ;
+  color: #ffffff ;
   font-size: 120%;
   font-weight: 700;
   }
