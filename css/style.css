@@ -3623,9 +3623,9 @@ tr:nth-child(even) {
 
 
 .fees >.fees-container table{
-  margin: 5%  2% 0 2%;
+  
   font-family: 'Lato',sans-serif;
-  margin: 0 8% ;
+  
   width: auto;
 }
 .fees >.fees-container table ,tr,td ,thead{
@@ -3641,8 +3641,8 @@ tr:nth-child(even) {
 }
 
 .fees >.fees-container table td{
-  padding: 2% 2%;
-  font-size:90% ;
+  padding: 1% 1%;
+  font-size:100% ;
 }
 .fees >.fees-container table .col1{
   width: 75%;

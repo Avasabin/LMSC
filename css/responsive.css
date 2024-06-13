@@ -418,6 +418,9 @@
     .container .pdf-container h4{
         font-size: 1.25rem;
     }
+    .fees >.fees-container table{
+        margin: 0 5%;
+       }
     
 }
 /*(max-width: 767px)*/
@@ -467,7 +470,7 @@
    }
 
    .fees >.fees-container table{
-    margin: 0 4%;
+    margin: 0 3%;
    }
 }
 
@@ -561,7 +564,5 @@
       .container .pdf-container h4{
         font-size: 1.4rem;
        }
-       .container .pdf-container{
-
-       }
+       
 }
