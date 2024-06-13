@@ -3412,15 +3412,17 @@ text-transform: uppercase;
 
 
 /*########## PRE ENROLMENT PAGE###################### */
+.fees .inner-page-banner .opacity ,
 .pre-enrolment .inner-page-banner .opacity {
   display: flex;
-  align-items: center;
+  align-content:flex-start ;
   justify-content: center;
   height: 50vh;
 }
 
+.fees .inner-page-banner h2 ,
 .pre-enrolment .inner-page-banner h2 {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   text-align: center;
 }
 
@@ -3428,13 +3430,16 @@ text-transform: uppercase;
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content: center;
+  /* justify-content: ; */
   gap: 5px;
+  margin:  4% 2%;
 }
 
 .pre-enrolment .page-breadcrum ul li {
   font-size: 1.2rem;
+  margin-bottom: 1%;
 }
+
 
 .pre-enrolment >.container {
   display: flex;
@@ -3463,8 +3468,89 @@ text-transform: uppercase;
 }
 
 
+.fees >.fees-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.fees-container .section-title{
+  margin-top: 3%;
+}
+.fees >.fees-container > .fees-description{
+  width: 60%;
+  /* background-color:#f5f5f5;
+  padding: 2% 1.5%;
+  border-radius: 2rem ; */
+  margin-bottom: 5%;
+
+}
+
+.fees >.fees-container .fee-section{
+  background-color:#f5f5f5;
+  padding: 3% 4%;
+  border-radius: 0.5rem ;
+}
+
+.fees >.fees-container > .fees-description h3{
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 3% 0;
+  /* margin: 2% 0%; */
+}
+
+.fees >.fees-container > .fees-description h4{
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 5% 0;
+  /* margin: 2% 0%; */
+}
+
+.fees >.fees-container .fee-info-2,
+.fees >.fees-container .fee-info-1
+{
+  line-height: 150%;
+  margin: 1% 1%;
+}
+
+.fees >.fees-container ul
+{
+  line-height: 250%;
+  margin-left: 8%;
+  list-style: disc;
+}
+
+.fees >.fees-container ul li::marker{
+  font-size: 110%;
+  
+}
 
 
+.fees >.fees-container table{
+  margin: 5%  2% 0 2%;
+  font-family: 'Lato',sans-serif;
+}
+.fees >.fees-container table ,tr,td ,thead{
+  border: 3px solid rgb(77, 73, 73);
+  border-collapse: collapse;
+}
+
+.fees >.fees-container table thead{
+  background-color: #F6882F ;
+  font-size: 120%;
+  font-weight: 700;
+  }
+
+  .fees >.fees-container table td{
+    padding: 2% 2%;
+    font-size:110% ;
+  }
+
+  .fees >.fees-container table .col1{
+    width: 75%;
+  }
 
 
 /* Apply a media query for larger screens */
