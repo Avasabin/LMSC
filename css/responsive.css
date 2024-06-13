@@ -396,19 +396,28 @@
     #banner .tp-caption-btn{
         top :58%;
         left: 10%;
-      }
+    }
     
-      #banner a {
+    #banner a {
         
         line-height: 2rem !important;
         width:calc(105*1.5);
         font-size: 1.8rem;
         padding: 1.5rem 0.6rem;
         height: auto;
+    }
+
+    .pre-enrolment .inner-page-banner h2 {
+        font-size: 2rem;
       }
-      .container .pdf-container h4{
-        font-size: 1.9;
-      }
+
+    .container .pdf-container {
+        flex: 1 1 100%; /* Full width on smaller screens */
+    }
+
+    .container .pdf-container h4{
+        font-size: 1.25rem;
+    }
     
 }
 /*(max-width: 767px)*/
@@ -476,22 +485,25 @@
         z-index: 3;
     }
 
-  #banner .tp-caption-btn{
-    top :21%;
-    left: 10%;
-  }
+    #banner .tp-caption-btn{
+        top :21%;
+        left: 10%;
+    }
 
-  #banner a {
-    
-    line-height: 10px !important;
-    width:105px;
-    font-size: 1rem;
-    padding: 1rem 0.6rem;
-    height: auto;
-  }
-  .container .pdf-container h4{
-    font-size: 1.6rem;
-   }
+    #banner a {
+        
+        line-height: 10px !important;
+        width:105px;
+        font-size: 1rem;
+        padding: 1rem 0.6rem;
+        height: auto;
+    }
+    .pre-enrolment .inner-page-banner h2{
+        font-size: 1.5rem;
+    }
+    .container .pdf-container h4{
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 450px) {
@@ -544,5 +556,8 @@
       }
       .container .pdf-container h4{
         font-size: 1.4rem;
+       }
+       .container .pdf-container{
+
        }
 }
