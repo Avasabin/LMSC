@@ -3364,7 +3364,7 @@ text-transform: uppercase;
 }
 
 .container .pdf-container .pdf-canvas {
-  width: 100%; /* Full width for responsive */
+  width: 45%; /* Full width for responsive */
   height: auto;
   cursor: pointer;
 }
