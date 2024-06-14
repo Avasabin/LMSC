@@ -440,6 +440,9 @@
       left: 8%;
       padding: 30px 10px;
     }
+    .course-details-page .course-details-content .short-info ul li {
+        margin: 15px 20px;
+      }
 }
 
 @media (max-width: 600px) {
@@ -482,7 +485,9 @@
    .main-menu-wrapper.fixed .logo {top:0;}
    .scroll-top {right:5px; bottom: 15px;}
    .course-v2 .single-course .course-heading ul li {display: block;margin: 0 0 5px 0;}
-   
+   .course-details-page .course-details-content .short-info ul li {
+    margin: 15px 20px;
+    }
    
     #banner .tp-caption {
         
