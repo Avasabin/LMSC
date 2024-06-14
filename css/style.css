@@ -3099,10 +3099,18 @@ text-transform: uppercase;
 .course-details-page .course-details-content {
   background: #fff;
 }
-.course-details-page .course-details-content .img {
+.img {
   position: relative;
-  
+  width: 100%; /* Ensure the image container spans the full width */
+  overflow: hidden; /* Hide any overflow beyond the container */
 }
+
+.img img {
+  display: block;
+  width: 100%; /* Make the image fill the entire width of its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
 .course-details-page .course-details-content .img span {
   width: 150px; /* Increased width */
   height: 70px; /* Increased height */
@@ -3118,11 +3126,11 @@ text-transform: uppercase;
 }
 
 .course-details-page .course-details-content .short-info {
-  margin: 20px; background: #F6882F; padding: 3% 2%;
+  margin: 0px; background: #F6882F; padding: 3% 2%;
 }
 
 .course-details-page .course-details-content .short-info ul li {
-  color: #403C37;
+  color: #fff;
   font-size: large;
   font-weight: bold;
   margin: 15px 2px;
