@@ -3432,9 +3432,14 @@ h3 {
   color: #403C37;
 }
 
+.tabcontent h4 {
+  margin: 10px 0;
+}
+
 .tabcontent ul {
   list-style-type: disc;
   padding-left: 20px;
+  padding-bottom: 10px;
 }
 
 .tabcontent ul li {
