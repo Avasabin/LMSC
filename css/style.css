@@ -225,6 +225,14 @@ video {
   /* line-height: ; */
 }
 
+.Under-construction-body:last-child{
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+
+
+
 /* Text container styling */
 .text {
   color: #666; /* Adjust text color */
