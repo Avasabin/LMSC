@@ -230,7 +230,24 @@ video {
   font-weight: 600;
 }
 
+.Under-construction-container a{
+  display: inline-block;
+  width: 230px;
+  line-height: 45px;
+  text-align: center;
+  margin: 20px auto;
+  background: #f6882f;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
 
+.Under-construction-container a:hover {
+  background: #fff;
+  color: #f6882f;
+}
 
 
 /* Text container styling */
@@ -1187,8 +1204,9 @@ header.inner-header .top-header {
   margin:10px 0 28px 0;
 }
 .section-title p {
-  width:70%;
+  width:100%;
   margin: 0 auto;
+  margin-bottom: 3% ;
 }
 .welcome-section .row {
   margin-top: 25px;
@@ -1219,14 +1237,32 @@ header.inner-header .top-header {
   flex-direction: column;
   justify-content: center; 
   align-items: center;
-  text-align: center;
+  text-align: left;
   word-spacing: 0.5rem;
+} 
+
+.welcome-section-details a{
+      display: inline-block;
+    width: 230px;
+    line-height: 45px;
+    text-align: center;
+    margin: 1.2eem auto;
+    background: #f6882f;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
 }
 
-.welcome-section-details > .welcome-detail-title{
+.welcome-section-details a:hover {
+  background: #fff;
+  color: #f6882f;
+}
+/* .welcome-section-details > .welcome-detail-title{
   margin: 2% 0;
   font-weight: 600;
-}
+} */
 /*======================  *** =================*/
 .welcome-section-two .row {
   text-align: center;
