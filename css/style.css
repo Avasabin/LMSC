@@ -209,7 +209,7 @@ video {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 5% 0;
+  /* margin: 3% 0; */
 }
 .under-construction-title{
   font-weight: 900;
