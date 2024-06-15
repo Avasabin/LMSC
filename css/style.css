@@ -3748,7 +3748,7 @@ tr:nth-child(even) {
 
 .fees >.fees-container {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   flex-direction: column;
   width: 100%;
