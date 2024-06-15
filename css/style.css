@@ -280,7 +280,7 @@ video {
 /* About */
 /* Container for the About Us section */
 .about-us-section {
-  padding: 50px 20px; /* Improved padding for better spacing */
+  padding: 10px 20px; /* Improved padding for better spacing */
   font-family: Arial, sans-serif;
   max-width: 1200px; /* Constrain the section to a maximum width */
   margin: 0 auto; /* Center the section horizontally */
@@ -3643,9 +3643,9 @@ tr:nth-child(even) {
 
 /* ##############Fees CSS########################### */
 .fees-container {
-  max-width: 80%; /* Adjust the percentage as needed */
-  padding: 20px;
-  margin: 0 auto;
+  max-width: 200%; /* Adjust the percentage as needed */
+  padding: 10px;
+  margin: 4 auto;
 }
 
 /* General content styling */
