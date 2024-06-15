@@ -202,21 +202,22 @@ video {
   margin-top: 5px; /* Space between the text and the underline */
 }
 
-.Under-construction-container{
+.under-construction-container{
   height: 100%;
   width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 5% 0;
 }
-.Under-construction-title{
+.under-construction-title{
   font-weight: 900;
   font-size: 2.5em;
   margin: 5% 0;
 }
 
-.Under-construction-body {
+.under-construction-body {
   margin: 2% 0 ;
   word-spacing: 0.5rem;
   text-align: center;
@@ -225,12 +226,12 @@ video {
   /* line-height: ; */
 }
 
-.Under-construction-body:last-child{
+.under-construction-body:last-child{
   font-size: 1.8em;
   font-weight: 600;
 }
 
-.Under-construction-container a{
+.under-construction-container a{
   display: inline-block;
   width: 230px;
   line-height: 45px;
@@ -244,7 +245,7 @@ video {
   transition: background 0.3s, color 0.3s;
 }
 
-.Under-construction-container a:hover {
+.under-construction-container a:hover {
   background: #fff;
   color: #f6882f;
 }
@@ -3622,6 +3623,14 @@ tr:nth-child(even) {
 /*########## Footer RTO and CRICOS Code###################### */
 
 
+
+/*########## EDUCATION AGENTS PAGE###################### */
+
+.education-agents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /*########## PRE ENROLMENT PAGE###################### */
 .fees .inner-page-banner .opacity ,
