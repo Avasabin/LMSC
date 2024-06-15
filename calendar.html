@@ -147,16 +147,15 @@
 			</div> <!-- /.page-breadcrum -->
 			
 			<div class="container">
-				
-				<div class="pdf-container" onclick="openPDF()">
+				<div class="pdf-container" onclick="openPDF('Files/2024-Academic-Calendar.pdf')">
 					<h4>Academic Calendar 2024</h4>
 					<!-- Placeholder for PDF rendering -->
-					<canvas id="pdf-canvas" class="pdf-canvas" style="cursor: pointer;"></canvas>
+					<canvas id="pdf-canvas-2024" class="pdf-canvas" style="cursor: pointer;"></canvas>
 				</div>
-				<div class="pdf-container" onclick="openPDF()">
+				<div class="pdf-container" onclick="openPDF('Files/2025-Academic-Calendar.pdf')">
 					<h4>Academic Calendar 2025</h4>
 					<!-- Placeholder for PDF rendering -->
-					<canvas id="pdf-canvas" class="pdf-canvas" style="cursor: pointer;"></canvas>
+					<canvas id="pdf-canvas-2025" class="pdf-canvas" style="cursor: pointer;"></canvas>
 				</div>
 			</div>
 			
@@ -241,38 +240,55 @@
 		<!-- Js File_________________________________ -->
 		<!-- Include PDF.js library -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
+		<style>
+			 .pdf-container {
+            margin-bottom: 20px;
+        }
+        .pdf-canvas {
+            border: 1px solid #000;
+            display: block;
+            margin: 5px auto;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            text-align: left;
+        }
+		</style>
 		<script>
-			// URL to the PDF
-			const pdfUrl = 'Files/2024-Academic-Calendar.pdf';
-			
+			function renderPDF(url, canvasId) {
+				pdfjsLib.getDocument(url).promise.then(pdfDoc => {
+					pdfDoc.getPage(1).then(page => {
+						const canvas = document.getElementById(canvasId);
+						const context = canvas.getContext('2d');
 	
-			// Load the PDF and render the first page
-			pdfjsLib.getDocument(pdfUrl).promise.then(pdfDoc => {
-				pdfDoc.getPage(1).then(page => {
-					const canvas = document.getElementById('pdf-canvas');
-					const context = canvas.getContext('2d');
+						// Set scale and viewport
+						const scale = 0.6; // Adjust scale to control thumbnail size
+						const viewport = page.getViewport({ scale });
 	
-					// Set scale and viewport
-					const scale = 0.6; // Adjust scale to control thumbnail size
-					const viewport = page.getViewport({ scale });
+						// Set canvas dimensions
+						canvas.width = viewport.width;
+						canvas.height = viewport.height;
 	
-					// Set canvas dimensions
-					canvas.width = viewport.width;
-					canvas.height = viewport.height;
-	
-					// Render PDF page into canvas context
-					const renderContext = {
-						canvasContext: context,
-						viewport: viewport
-					};
-					page.render(renderContext);
+						// Render PDF page into canvas context
+						const renderContext = {
+							canvasContext: context,
+							viewport: viewport
+						};
+						page.render(renderContext);
+					});
 				});
-			});
-	
-			// Function to open the PDF in a new tab
-			function openPDF() {
-				window.open(pdfUrl, '_blank');
 			}
+	
+			function openPDF(url) {
+				window.open(url, '_blank');
+			}
+	
+			// Render the PDFs on page load
+			document.addEventListener("DOMContentLoaded", function() {
+				renderPDF('Files/2024-Academic-Calendar.pdf', 'pdf-canvas-2024');
+				renderPDF('Files/2025-Academic-Calendar.pdf', 'pdf-canvas-2025');
+			});
 		</script>
 		<!-- j Query -->
 		<script type="text/javascript" src="vendor/jquery-2.1.4.js"></script>
