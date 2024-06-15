@@ -164,6 +164,7 @@ video {
 /* General section styling */
 /* General section styling */
 .about-us-section {
+  display: flex;
   background-color: #fff; /* Set the background to white */
   padding: 30px 20px; /* Padding for the section */
   font-family: Arial, sans-serif;
@@ -172,6 +173,8 @@ video {
   display: flex; /* Optional: Use flexbox for better control */
   flex-direction: column; /* Stack items vertically */
   gap: 10px; /* Control the gap between child elements */
+  justify-content: center;
+  align-items: center;
 }
 
 /* Section title styling */
@@ -197,6 +200,29 @@ video {
   height: 4px; /* Adjust the thickness of the underline */
   background-color: #28a745; /* Set the underline color */
   margin-top: 5px; /* Space between the text and the underline */
+}
+
+.Under-construction-container{
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Under-construction-title{
+  font-weight: 900;
+  font-size: 2.5em;
+  margin: 5% 0;
+}
+
+.Under-construction-body {
+  margin: 2% 0 ;
+  word-spacing: 0.5rem;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.6;
+  /* line-height: ; */
 }
 
 /* Text container styling */
@@ -236,12 +262,7 @@ video {
 }
 
 /* Anchor tags for buttons */
-.about-us-section {
-  padding: 50px 20px;
-  font-family: Arial, sans-serif;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 
 .about-us-section a {
   display: inline-block;
@@ -1180,7 +1201,25 @@ header.inner-header .top-header {
 .welcome-section .row p {
   padding: 0 0 0 67px;
 }
-/*====================== *** =================*/
+
+.welcome-section .section-title .p-color{
+  margin-bottom: 2% ;
+}
+
+.welcome-section .welcome-section-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+  word-spacing: 0.5rem;
+}
+
+.welcome-section-details > .welcome-detail-title{
+  margin: 2% 0;
+  font-weight: 600;
+}
+/*======================  *** =================*/
 .welcome-section-two .row {
   text-align: center;
 }
@@ -1206,8 +1245,8 @@ header.inner-header .top-header {
 }
 /*=========================== Popular Course =================*/
 .popular-course {
-  padding: 90px 0 95px 0;
-  margin: 95px 0 0 0;
+  padding: 3% 0 1% 0;
+  margin: 2% 0 0 0;
 }
 .popular-course.mFix {
   margin-top:0;

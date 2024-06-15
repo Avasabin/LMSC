@@ -421,6 +421,18 @@
     .fees >.fees-container table{
         margin: 0 5%;
        }
+
+    .construction-content {
+        padding: 20px;
+    }
+
+    .construction-content h1 {
+        font-size: 2em;
+    }
+
+    .construction-content p {
+        font-size: 1em;
+    }
     
 }
 /*(max-width: 767px)*/
