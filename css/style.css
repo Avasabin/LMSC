@@ -3635,9 +3635,9 @@ tr:nth-child(even) {
 
 /* ##############Fees CSS########################### */
 .fees-container {
-  max-width: 100%; /* Adjust the percentage as needed */
-  padding: 20px;
-  margin: 0 auto;
+  max-width: 200%; /* Adjust the percentage as needed */
+  padding: 10px;
+  margin: 4 auto;
 }
 
 /* General content styling */
