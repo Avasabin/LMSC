@@ -3851,6 +3851,47 @@ tr:nth-child(even) {
   text-align: center;
   width: 100%;
 }
+/* #################Enrolent Process##################### */
+.orange-banner {
+  position: relative;
+  background-color: #F6882F; /* Orange background color */
+  padding: 10px; /* Adjust padding */
+  margin-bottom: 30px; /* Space between banners */
+  border-radius: 8px; /* Rounded corners */
+  text-align: center; /* Center align text */
+  max-width: 80%; /* Limit maximum width */
+  margin-left: auto;
+  margin-right: auto; /* Center the banner */
+  overflow: visible; /* Allow arrow to be visible outside the banner */
+}
+
+.banner-content {
+  padding-bottom: 30px; /* Adjust padding for text */
+}
+
+.white-text {
+  color: #FFFFFF; /* White text color */
+  font-size: 18px; /* Adjust font size as needed */
+  line-height: 1.4; /* Adjust line height for readability */
+  margin: 0; /* Remove default margins */
+}
+
+.down-arrow {
+  position: absolute;
+  bottom: -15px; /* Position arrow below the banner */
+  left: 50%; /* Center the arrow horizontally */
+  transform: translateX(-50%); /* Centering trick */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #F6882F; /* Match the background color of the banner */
+}
+
+
+
+
+
 
 
 
