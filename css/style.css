@@ -225,14 +225,6 @@ video {
   /* line-height: ; */
 }
 
-.Under-construction-body:last-child{
-  font-size: 1.8em;
-  font-weight: 600;
-}
-
-
-
-
 /* Text container styling */
 .text {
   color: #666; /* Adjust text color */
@@ -3593,16 +3585,70 @@ tr:nth-child(even) {
   display: flex;
   align-content:flex-start ;
   justify-content: center;
-  height: 50vh;
+  height: 40vh;
 }
 
 
-/* {{{{{{{{{{{{{{{{{{{{{{{{{{{{fee page}}}}}}}}}}}}}}}}}}}}}}}}}} */
-.fees .inner-page-banner h2 ,
+/* ##############Fees CSS########################### */
+.fees-container {
+  max-width: 80%; /* Adjust the percentage as needed */
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* General content styling */
+.fees-description {
+  margin: 20px 0;
+}
+
+.fees-description p,
+.fees-description ul,
+.fees-description h3 {
+  margin: 15px 0;
+}
+
+.fees-description ul {
+  padding-left: 20px;
+}
+
+.fees-description ul li {
+  margin-bottom: 5px;
+  list-style-type: disc;
+}
+
+/* Table styling */
+.fees-description table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 5px 0;
+}
+
+.fees-description table th,
+.fees-description table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.fees-description table th {
+  background-color: #f4f4f4;
+}
+
+/* Header styling */
+.fees .inner-page-banner h2,
 .pre-enrolment .inner-page-banner h2 {
   font-size: 4.5rem;
   text-align: center;
 }
+
+.fees .inner-page-banner .opacity,
+.pre-enrolment .inner-page-banner .opacity {
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  height: 40vh;
+}
+
 
 .pre-enrolment .page-breadcrum ul {
   list-style: none;
