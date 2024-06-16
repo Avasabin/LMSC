@@ -176,7 +176,20 @@ video {
   justify-content: center;
   align-items: center;
 }
+.about-us-section .about-us-section-2{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
 
+.about-us-section-2 .text{
+  flex: 3 3 3;
+  /* width: 75%; */
+}
+.about-us-section-2 .about-us-section-2-image img{
+  flex: 1 1 1 ;
+  width: 25em;
+} 
 /* Section title styling */
 .section-title {
   text-align: left;
@@ -286,7 +299,9 @@ video {
   font-family: Arial, sans-serif;
   max-width: 1200px; /* Constrain the section to a maximum width */
   margin: 0 auto; /* Center the section horizontally */
+  margin-bottom: 4%;
 }
+
 
 /* Anchor tags for buttons */
 
@@ -390,12 +405,17 @@ video {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-  .flex-container {
+  .flex-container , .about-us-section .about-us-section-2 {
     flex-direction: column; /* Stack items vertically */
   }
 
+  .about-us-section .about-us-section-2 .about-us-section-2-image{
+    display: none;
+  }
+
   .about-us-section {
-    padding: 30px 15px; /* Reduce padding */
+    padding: 1em 1em; /* Reduce padding */
+    margin-bottom: 1%;
   }
 
   .about-us-section a {
@@ -3743,6 +3763,7 @@ tr:nth-child(even) {
   gap: 20px;
   margin: 2% auto;
 }
+
 .container .pdf-container {
   flex: 1 1 45%; /* Responsive flex property */
   padding: 10px;
