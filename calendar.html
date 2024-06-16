@@ -148,30 +148,16 @@
 			
 			<div class="container">
 				<div class="pdf-container" onclick="openPDF('Files/2024-Academic-Calendar.pdf')">
-					<h4>Academic Calendar 2024</h4>
-					<!-- Placeholder for PDF rendering -->
-					<canvas id="pdf-canvas-2024" class="pdf-canvas" style="cursor: pointer;"></canvas>
+				  <h4>Academic Calendar 2024</h4>
+				  <!-- Placeholder for PDF rendering -->
+				  <canvas id="pdf-canvas-2024" class="pdf-canvas" style="cursor: pointer;"></canvas>
 				</div>
 				<div class="pdf-container" onclick="openPDF('Files/2025-Academic-Calendar.pdf')">
-					<h4>Academic Calendar 2025</h4>
-					<!-- Placeholder for PDF rendering -->
-					<canvas id="pdf-canvas-2025" class="pdf-canvas" style="cursor: pointer;"></canvas>
+				  <h4>Academic Calendar 2025</h4>
+				  <!-- Placeholder for PDF rendering -->
+				  <canvas id="pdf-canvas-2025" class="pdf-canvas" style="cursor: pointer;"></canvas>
 				</div>
 			</div>
-			
-			<!-- SubsCribe Banner ___________________ -->
-	        <div class="subscribe-banner p-color-bg wow fadeInUp">
-	        	<div class="container">
-	        		<h3>Subscribe now</h3>
-	        		<p>Receive weekly newsletter with educational materials, new courses, most popular posts, popular books and much more!</p>
-	        		<form action="#" class="clear-fix">
-	        			<input type="email" class="float-left wow fadeInLeft" placeholder="Email address">
-	        			<button class="float-left tran3s wow fadeInRight">Subcribe</button>
-	        		</form>
-	        	</div>
-	        </div>
-
-
 
 	        <!-- Footer ______________________________ -->
 	        <footer>
@@ -240,21 +226,6 @@
 		<!-- Js File_________________________________ -->
 		<!-- Include PDF.js library -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
-		<style>
-			 .pdf-container {
-            margin-bottom: 20px;
-        }
-        .pdf-canvas {
-            border: 1px solid #000;
-            display: block;
-            margin: 5px auto;
-        }
-        .container {
-            width: 50%;
-            margin: 0 auto;
-            text-align: left;
-        }
-		</style>
 		<script>
 			function renderPDF(url, canvasId) {
 				pdfjsLib.getDocument(url).promise.then(pdfDoc => {
