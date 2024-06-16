@@ -3240,12 +3240,13 @@ text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.5); /* Example background color for visibility */
 }
 
+/* #####Course- Cricos Code  */
 .course-details-page .course-details-content .short-info {
-  margin: 0px; background: #F6882F; padding: 3% 2%;
+  margin: 0px; background: #FFF; padding: 3% 2%;
 }
 
 .course-details-page .course-details-content .short-info ul li {
-  color: #fff;
+  color: #000;
   font-size: large;
   font-weight: bold;
   margin: 15px 2px;
