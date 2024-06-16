@@ -176,16 +176,6 @@ video {
   justify-content: center;
   align-items: center;
 }
-.about-us-section .about-us-section-2{
-  display: flex;
-  justify-content: center;
-  align-items: start;
-}
-
-.about-us-section-2 .text{
-  flex: 3 3 3;
-  /* width: 75%; */
-}
 .about-us-section img{
   flex: 1 1 1 ;
   justify-content: center;
