@@ -269,6 +269,7 @@ video {
   margin: 10px 0; /* Space between paragraphs */
 }
 
+
 /* Additional styling for alignment (Optional) */
 .align-center {
   display: flex;
@@ -307,6 +308,18 @@ video {
 .about-us-section a:hover {
   background: #fff;
   color: #f6882f;
+}
+
+.about-us-section .text{
+  background-color: #fff;
+  /* text-align: center; */
+  word-spacing: 1px;
+  line-height: 1.6;
+
+}
+
+.about-us-section h3{
+  text-align: left;
 }
 
 .section-title {
@@ -690,6 +703,11 @@ header.inner-header .top-header {
 .main-menu-wrapper .nav li a {
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
+}
+.main-menu-wrapper .nav li .sub-sub-item{
+text-transform: capitalize;
+word-spacing: 0.2em;
+
 }
 .main-menu-wrapper .nav>li {
   margin: 0 16px;
@@ -1331,7 +1349,7 @@ header.inner-header .top-header {
   border-color: #F6882F;
 }
 .popular-course .course-item-wrapper .text h4 a {
-  text-transform: uppercase;
+  text-transform: capitalize;
   color:#333333;
   margin: 25px 0 18px 0;
 }
