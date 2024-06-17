@@ -176,20 +176,12 @@ video {
   justify-content: center;
   align-items: center;
 }
-
-.about-us-section .about-us-section-2{
-  display: flex;
-  justify-content: center;
-  align-items: start;
-}
-
-.about-us-section-2 .text{
-  flex: 3 3 3;
-  /* width: 75%; */
-}
-.about-us-section-2 .about-us-section-2-image img{
+.about-us-section img{
   flex: 1 1 1 ;
-  width: 25em;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 } 
 /* Section title styling */
 .section-title {
@@ -3248,12 +3240,13 @@ text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.5); /* Example background color for visibility */
 }
 
+/* #####Course- Cricos Code  */
 .course-details-page .course-details-content .short-info {
-  margin: 0px; background: #F6882F; padding: 3% 2%;
+  margin: 0px; background: #FFF; padding: 3% 2%;
 }
 
 .course-details-page .course-details-content .short-info ul li {
-  color: #fff;
+  color: #000;
   font-size: large;
   font-weight: bold;
   margin: 15px 2px;
@@ -3676,7 +3669,7 @@ tr:nth-child(even) {
 .pre-enrolment .inner-page-banner .opacity {
   display: flex;
   align-content:flex-start ;
-  justify-content: center;
+  justify-content: start;
   height: 40vh;
 }
 
@@ -3724,13 +3717,6 @@ tr:nth-child(even) {
 
 .fees-description table th {
   background-color: #f4f4f4;
-}
-
-/* Header styling */
-.fees .inner-page-banner h2,
-.pre-enrolment .inner-page-banner h2 {
-  font-size: 4.5rem;
-  text-align: center;
 }
 
 .fees .inner-page-banner .opacity,
@@ -3903,31 +3889,39 @@ tr:nth-child(even) {
 /* #################Enrolent Process##################### */
 .orange-banner {
   position: relative;
-  background-color: #F6882F; /* Orange background color */
   padding: 10px; /* Adjust padding */
-  margin-bottom: 30px; /* Space between banners */
-  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 35px; /* Space between banners */
   text-align: center; /* Center align text */
   max-width: 80%; /* Limit maximum width */
+  border: 1px solid #f6882F;
   margin-left: auto;
   margin-right: auto; /* Center the banner */
   overflow: visible; /* Allow arrow to be visible outside the banner */
+  transition: 0.5s all ease;
+  
+}
+
+.orange-banner:hover {
+  box-shadow: 0px 3px 10px 0px #f6882F66;
+-webkit-box-shadow: 0px 3px 10px 0px #f6882F66;
+-moz-box-shadow: 0px 3px 10px 0px #f6882F66;
+  transform: translateY(-2px);
 }
 
 .banner-content {
-  padding-bottom: 30px; /* Adjust padding for text */
+  padding: 20px; /* Adjust padding for text */
 }
 
 .white-text {
-  color: #FFFFFF; /* White text color */
+  color: #403C37; /* White text color */
   font-size: 18px; /* Adjust font size as needed */
-  line-height: 1.4; /* Adjust line height for readability */
+  line-height: 1.3; /* Adjust line height for readability */
   margin: 0; /* Remove default margins */
 }
 
 .down-arrow {
   position: absolute;
-  bottom: -15px; /* Position arrow below the banner */
+  bottom: -25px; /* Position arrow below the banner */
   left: 50%; /* Center the arrow horizontally */
   transform: translateX(-50%); /* Centering trick */
   width: 0;
