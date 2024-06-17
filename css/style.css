@@ -718,7 +718,7 @@ header.inner-header .top-header {
   text-transform: uppercase;
 }
 .main-menu-wrapper .nav li .sub-sub-item{
-text-transform: capitalize;
+text-transform: none;
 word-spacing: 0.2em;
 
 }
