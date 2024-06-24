@@ -1030,9 +1030,9 @@ word-spacing: 0.2em;
   color: #F6882F;
 }
 
-.welcome-section {
+/* .welcome-section {
   /* margin-top: 5%; */
-}
+/* } */
 
 /* Media Queries for Mobile View */
 @media (max-width: 768px) {
