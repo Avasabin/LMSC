@@ -2252,10 +2252,10 @@ footer .bottom-footer a:hover {
   margin-bottom: 30px;
 }
 .contact-us-page .contact-us-form input {
-  height:50px;
+  height:45px;
 }
 .contact-us-page .contact-us-form textarea {
-  height:130px;
+  height:150px;
   max-width: 100%;
   padding: 25px 20px 15px 30px;
 }
@@ -3617,7 +3617,7 @@ tr:nth-child(even) {
 .radio-group input[type="radio"] {
   width: 15px; /* Adjust the width as needed */
   height: 18px; /* Adjust the height as needed */
-  margin-right: 5px; /* Adjust the spacing between radio buttons */
+  margin-right: 9px; /* Adjust the spacing between radio buttons */
   vertical-align: middle; /* Align radio buttons vertically */
   
   
@@ -3626,7 +3626,7 @@ tr:nth-child(even) {
 
 .radio-group label {
   display: inline-block; /* Display labels inline */
-  margin-bottom: 6px; /* Adjust the spacing between radio buttons */
+  margin-bottom: 4px; /* Adjust the spacing between radio buttons */
   vertical-align: middle; /* Align labels vertically */
   
 }
@@ -3635,6 +3635,8 @@ tr:nth-child(even) {
   vertical-align: middle; /* Align labels vertically with radio buttons */
   line-height: 2;
 }
+
+
 
 /* ################### Contact Us Country Code###################### */
 #country_code {
