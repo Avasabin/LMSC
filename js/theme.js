@@ -306,7 +306,7 @@ function mobileDropdown () {
  }
 
  function toggleSubSubMenu() {
-  $('.subdrowdown-holder ').click(function(event) {
+  $('.subdropdown-holder ').click(function(event) {
       event.preventDefault();
       var $subsubmenu = $(this).next('.sub-sub-menu');
       $('.sub-sub-menu').not($subsubmenu).slideUp();

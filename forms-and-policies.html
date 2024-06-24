@@ -8,7 +8,7 @@
 		<!-- For Resposive Device -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>Contact Us - La Maison</title>
+		<title>Forms and Policies - La Maison</title>
 
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
@@ -31,10 +31,9 @@
 	</head>
 
 	<body>
-		<div class="main-page-wrapper about-us-v1-page">
+		<div class="main-page-wrapper forms-and-policies ">
 
 
-			<!-- Header _________________________________ -->
 			<!-- Header _________________________________ -->
 			<header class="main-header">
 				<div class="top-header">
@@ -56,7 +55,7 @@
 
 				<!-- _______________________ Theme Menu _____________________ -->
 
-				<div class="main-menu-wrapper clear-fix">
+				<div class="main-menu-wrapper container clear-fix">
 					<div class="container">
 						<div class="logo float-left"><a href="index.html"><img src="images/logo/LM-logo-long.png" alt="LOGO"></a></div>
 						<!-- Menu -->
@@ -75,7 +74,7 @@
 							 <ul class="nav navbar-nav">
 							   <li><a href="index.html">Home</a>
 							   </li>
-							   <li class="current-page-item"><a href="about-us.html">About Us</a>
+							   <li class=""><a href="about-us.html">About Us</a>
 							   </li>
 							   
 							   <li class="dropdown-holder"><a href="#">Courses</a>
@@ -100,15 +99,15 @@
 										</li>
 									</ul>
 							   </li>
-							   <li class="dropdown-holder"><a href="#">Enrolment</a>
+							   <li class="dropdown-holder current-page-item"><a href="#">Enrolment</a>
 									<ul class="sub-menu">
-										<li><a href="#" class="subdropdown-holder tran3s">Pre-Enrolment</a>
+										<li><a href="Pre-Enrolment.html" class="subdropdown-holder tran3s">Pre-Enrolment</a>
 											<ul  class="sub-sub-menu" id="enrol-forms-sub-sub-menu">
 												<li><a href="forms-and-policies.html" class="sub-sub-item tran3s">Forms and Policies</a></li>
 											</ul> 
 										</li>
 										<li><a href="fees.html" class="tran3s">Fees</a></li>
-										<li><a href="Enrolment-Process.html" class="tran3s">Enrolment Process</a></li>
+										<li><a href="enrolment-process.html" class="tran3s">Enrolment Process</a></li>
 										<li><a href="education-agents.html" class="tran3s">Education Agents</a></li>
 									</ul>
 							   </li>
@@ -134,7 +133,7 @@
 			<div class="inner-page-banner">
 				<div class="opacity">
 					<div class="container">
-						<h2>Contact us</h2>
+						<h2>Forms and Policies</h2>
 					</div> <!-- /.container -->
 				</div> <!-- /.opacity -->
 			</div> <!-- /.inner-page-banner -->
@@ -145,168 +144,90 @@
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li>-</li>
-						<li>Contact Us</li>
+						<li>Forms and Policies</li>
 					</ul>
 				</div> <!-- /.container -->
 			</div> <!-- /.page-breadcrum -->
 
+			<div class="forms-and-policies">
+				<!-- <div class="Under-construction-container">
+					
+					<h3 class="Under-construction-title">Page Under Construction</h3>
+					<p class="Under-construction-body">This page is currently under construction and is being built to serve you better. We are working hard to bring you new and improved content. Please check back soon for updates.</p>
+					<p class="Under-construction-body">In the meantime, feel free to explore the rest of our website or contact us directly for any inquiries. We appreciate your understanding and look forward to providing you with a better experience shortly.</p>
+					<p class="Under-construction-body">Stay tuned!</p>
+					<p class="Under-construction-body">Thank you for your patience!</p>
+					<a href="index.html" class=".Under-construction-home-button">Go to Home Page</a>
+					
+				</div> -->
+				<div class="section-title">
+				  <h2>Forms and Policies</h2>
+				  <div class="title-underline"></div>
+				</div>
 
-			<!-- Contact Us Form _____________________ -->
-			<div class="contact-us-page">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 wow fadeInLeft">
-							<div class="contact-us-form">
-								<h3>Send A Message</h3>
-								<p>Your email address will not be published.</p>
-								<form action="inc/sendemail.php" class="contact-form" autocomplete="off">
-									<div class="row">
-										<div class="col-lg-4 col-md-4 col-sm-12">
-											<label for="first_name">First Name: <span class="required">*</span></label>
-											<input id="first_name" name="first_name" type="text" placeholder="" required>
-										</div>
-										<div class="col-lg-4 col-md-4 col-sm-12">
-											<label for="middle_name">Middle Name: <span class="required">*</span></label>
-											<input id="middle_name" name="middle_name" type="text" placeholder="" required>
-										</div>
-										<div class="col-lg-4 col-md-4 col-sm-12">
-											<label for="last_name">Last Name: <span class="required">*</span></label>
-											<input id="last_name" name="last_name" type="text" placeholder="" required>
-										</div>
-										<div class="col-lg-12 col-md-12 col-sm-12">
-											<label for="email">Email: <span class="required">*</span></label>
-											<input id="email" name="email" type="email" placeholder="" required>
-										</div>
-										<div class="col-lg-12 col-md-12 col-sm-12">
-											<label for="phone_number">Phone Number: <span class="required">*</span></label>
-											<div style="display: flex;">
-												<select id="country_code" name="country_code" style="width: 80px; height: 50px; margin-right: 5px;" required>
-													<option value="+61">+61 (Australia)</option>
-													<option value="+1">+1 (USA)</option>
-													<option value="+44">+44 (UK)</option>
-													<option value="+91">+91 (India)</option>
-													<option value="+81">+81 (Japan)</option>
-													<option value="+20">+20 (Egypt)</option>
-													<option value="+33">+33 (France)</option>
-													<option value="+49">+49 (Germany)</option>
-													<option value="+39">+39 (Italy)</option>
-													<option value="+7">+7 (Russia)</option>
-													<option value="+44">+44 (UK)</option>
-												</select>
-												<input id="phone_number" name="phone_number" type="tel" placeholder="426888***" pattern="[0-9]{10}" required>
-											</div>
-										</div>
-								
-										<div class="col-lg-12">
-											<label for="subject">Subject:</label>
-											<input id="subject" name="subject" type="text" placeholder="">
-										</div>
-
-										<div class="col-lg-12 col-md-12 col-sm-12">
-											<label><span class="required">*</span> I am From:</label>
-											<div class="radio-group">
-												<label class="radio-inline">
-													<input type="radio" name="location_from" value="Australian"> <span>I am Australian and looking to study</span>
-												</label>
-											</div>
-											<div class="radio-group">
-												<label class="radio-inline">
-													<input type="radio" name="location_from" value="Another country"> <span>I am from another country but currently in Australia and am looking to study</span>
-												</label>
-											</div>
-											<div class="radio-group">
-												<label class="radio-inline">
-													<input type="radio" name="location_from" value="Outside Australia"> <span>I am outside of Australia looking to study</span>
-												</label>
-											</div>
-										</div>
-										
-										<div class="col-lg-12 col-md-12 col-sm-12">
-											<label><span class="required">*</span> I want to study:</label>
-											<div class="radio-group">
-												<label class="radio-inline">
-													<input type="radio" name="study_mode" value="Face to face"> <span>Face to face in Australia</span>
-												</label>
-												<label class="radio-inline">
-													<input type="radio" name="study_mode" value="E-learning"> <span>E-learning - Online</span>
-												</label>
-											</div>
-										</div>
-										<div class="col-lg-12 col-md-12 col-sm-12">
-											<label><span class="required">*</span> Delivery Location:</label>
-											<div class="radio-group">
-												<label class="radio-inline">
-													<input type="radio" name="delivery_location" value="Brisbane"> <span>Sydney</span>
-												</label>
-												<label class="radio-inline">
-													<input type="radio" name="delivery_location" value="Other"> <span>Other</span>
-												</label>
-											</div>
-										</div>
-										<div class="col-lg-12">
-											<label for="message">Your Message:</label>
-											<textarea id="message" name="message" placeholder=""></textarea>
-										</div>
-										<div class="col-lg-12">
-											<button class="btn p-color-bg tran3s themehover" title="Send">Send Message</button>
-										</div>
-									</div>
-								</form>
-
-								<!-- Contact alert -->
-								<div class="alert_wrapper" id="alert_success">
-									<div id="success">
-										<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
-										<div class="wrapper">
-							               	<p>Your message was sent successfully.</p>
-							             </div>
-							        </div>
-							    </div> <!-- End of .alert_wrapper -->
-							    <div class="alert_wrapper" id="alert_error">
-							        <div id="error">
-							           	<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
-							           	<div class="wrapper">
-							               	<p>Sorry!Something Went Wrong.</p>
-							            </div>
-							        </div>
-							    </div> <!-- End of .alert_wrapper -->
-							</div> <!-- /.contact-us-form -->
-						</div> <!-- /.col- -->
+                <div class="container">
+                    <div class="pdf-container"  onclick="openPDF('./Files/forms_and_policies/Application_for_Enrolment_Form_Fillable.pdf')">
+                      <h4>Application for Enrolment Form 2024</h4>
+                      <!-- Placeholder for PDF rendering -->
+                      <canvas id="pdf-erol-form-2024" class="pdf-canvas" style="cursor: pointer;"></canvas>
+                    </div>
+                    
+                </div>
+				<div class="flex-container about-us">
+				  <div class="image">
+					<img src="images/inner-page/Our-vision.jpg" alt="About Us Image">
+				  </div>
+				  <div class="text">
+					<p>Welcome to La Maison Scholar College (LMSC)! We're located at Suite 203/118 Church Street Parramatta NSW 2150, Australia. At LMSC, we offer courses in hospitality, information technology, and management sectors..</p>
+					<p>"Empowering students for a brighter future."</p>
+					<h3>Why Choose Us?</h3>
+					<p>Choosing LMSC means opting for high-quality education that's relevant to industry needs. Our campus boasts comfortable facilities, modern equipment, and resources, ensuring a conducive learning environment.</p>
+					<h3>Our Vision</h3>
+					<p>LMSC will strive to be one of the most preferred educational institutes in Australia by ensuring highest standards of integrity, diversity and inclusion, and intellectual and creative excellence.</p>
+					<a href="contact-us.html" class="button">Apply Now</a>
+				  </div>
+				</div>
+			  
+			</div>
 
 						
-
-						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 wow fadeInRight">
-							<div class="contactUs-address">
-								<h3>CONTACT US</h3>
-			        			<p>Welcome to La Maison Scholar College (LMSC) , we are glad you're here. </p>
-
-			        			<ul>
-	        						<li>
-	        							<i class="fa fa-envelope-o" aria-hidden="true"></i>
-	        							<a href="mailto:info@imsc.edu.au" class="tran3s">info@lmsc.edu.au</a>
-	        						</li>
-	        						<li>
-	        							<i class="fa fa-phone" aria-hidden="true"></i>
-	        							<a href="tel:+61 2 7805 8111" class="tran3s">+61 2 7805 8111</a>
-	        						</li>
-	        						<li><i class="fa fa-map-marker" aria-hidden="true"></i>Suite 203 Level 2, 118 Church Street Parramatta, NSW 2150</li>
-	        					</ul>
-
-							</div> <!-- /.our-address -->
+			<div class=" flex-container about-us-section">
+				<div class="row">
+					<hr>
+					<div class="col-lg-9">
+						<div class="text">
+							<h3>Our Mission</h3>
+							<p>The mission of LMSC is to advance learning, uplift skills and educate students in hospitality, technology and management that will ensure students’ success and best serve the community.
+								LMSC is committed to providing its students from diverse social, economic, and ethnic backgrounds with an education that combines modern academic study and the excitement of learning new skills, with the support and intellectual input of dedicated experts.</p>
+							<p>We seek to develop in every student the knowledge, ability, and passion to work wisely, creatively, and effectively to meet the needs of the industry. The aim is to be inclusive and instil a strong belief in hard work and core values of gender equality to make the students socially responsible citizens. </p>
 						</div>
-					</div> <!-- /.row -->
-				</div> <!-- /.container -->
-			</div> <!-- /.contact-us-page -->
-
-
-			<!-- Google Map -->
-			<div id="google-map" style="height:460px; width:100%; margin-top:100px;"></div>
-
-
-
-
+					</div>
+					<div class="col-lg-3">
+						<img src="./images/inner-page/Our-Mission.jpg" alt="">
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<hr>
+					<div class="col-lg-3">
+						<img src="./images/inner-page/Our-Values.jpg" alt="">
+						
+					</div>
+					<div class="col-lg-9">
+						<div class="text">
+							<h3>Our Values</h3>
+							<p>LMSC will strive for academic excellence. We hold authenticity, graciousness, honesty and boldness as four pillars of success. LMSC will be transparent, advocate 
+								wellbeing of the communities we serve and be worthy of community’s trust. </p>
+						</div>
+					</div>
+				</div>
 			
 
+			</div>  
+			  
+			 
+			<!-- SubsCribe Banner ___________________ -->
+	        
 
 	        <!-- Footer ______________________________ -->
 	        <footer>
@@ -373,7 +294,37 @@
 
 
 		<!-- Js File_________________________________ -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
+		<script>
+			function loadAndRenderPDF(pdfUrl, canvasId, scale = 1.0) {
+				pdfjsLib.getDocument(pdfUrl).promise.then(pdfDoc => {
+					pdfDoc.getPage(1).then(page => {
+						const canvas = document.getElementById(canvasId);
+						const context = canvas.getContext('2d');
+						const viewport = page.getViewport({ scale });
+						canvas.width = viewport.width;
+						canvas.height = viewport.height;
+						const renderContext = {
+							canvasContext: context,
+							viewport: viewport
+						};
+						page.render(renderContext);
+					});
+				});
+			}
 
+			function openStudentPDF() {
+				window.open('Files/Pre-Enrolment-Files/Student Prospectus V1.0 2024.pdf', '_blank');
+			}
+
+			function openInternationalPDF() {
+				window.open('Files/Pre-Enrolment-Files/International Student Handbook v3.0.pdf', '_blank');
+			}
+
+			// Call the function for each PDF file with custom scale values
+			loadAndRenderPDF('./Files/forms_and_policies/Application_for_Enrolment_Form_Fillable.pdf', 'pdf-erol-form-2024', 0.7);
+			
+		</script>
 		<!-- j Query -->
 		<script type="text/javascript" src="vendor/jquery-2.1.4.js"></script>
 
@@ -404,9 +355,6 @@
 		<!-- js count to -->
 		<script type="text/javascript" src="vendor/jquery.appear.js"></script>
 		<script type="text/javascript" src="vendor/jquery.countTo.js"></script>
-		<!-- Validation -->
-		<script type="text/javascript" src="vendor/contact-form/validate.js"></script>
-		<script type="text/javascript" src="vendor/contact-form/jquery.form.js"></script>
 
 		<!-- Theme js -->
 		<script type="text/javascript" src="js/theme.js"></script>

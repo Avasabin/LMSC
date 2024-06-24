@@ -80,20 +80,20 @@
 							   <li class="dropdown-holder"><a href="#">Courses</a>
 									<ul class="sub-menu">
 										
-										<li><a href="#" class="tran3s subdrowdown-holder">Hospitality</a>
+										<li><a href="#" class="tran3s subdropdown-holder">Hospitality</a>
 											<ul class="sub-sub-menu" id="hospi-courses-sub-sub-menu">
 												<li><a href="SIT40521-cert-iv-kitc-mgmt.html" class="sub-sub-item tran3s">SIT40521 Certificate IV in Kitchen Management</a></li>
 												<li><a href="SIT50422-dip-hosp-mgmt.html" class="sub-sub-item tran3s">SIT50422 Diploma of Hospitality Management</a></li>
 											</ul>
 										</li>
 
-										<li><a href="#" class="tran3s subdrowdown-holder">Information Technology</a>
+										<li><a href="#" class="tran3s subdropdown-holder">Information Technology</a>
 											<ul  class="sub-sub-menu" id="it-courses-sub-sub-menu">
 												<li><a href="ICT50220-dip-it.html" class="sub-sub-item tran3s">ICT50220 Diploma of Information Technology</a></li>
 												<li><a href="ICT60220-adv-dip-it.html" class="sub-sub-item tran3s">ICT60220 Advanced Diploma of Information Technology</a></li>
 											</ul> 
 										</li>
-										<li><a href="#" class="tran3s subdrowdown-holder">Management</a>
+										<li><a href="#" class="tran3s subdropdown-holder">Management</a>
 											<ul class="sub-sub-menu" id="mang-courses-sub-sub-menu" >
 												<li><a href="BSB80120-gd-dip-mgmt.html" class="sub-sub-item tran3s">BSB80120 Graduate Diploma of Management (Learning)</a></li>
 											</ul>
@@ -102,7 +102,11 @@
 							   </li>
 							   <li class="dropdown-holder current-page-item"><a href="#">Enrolment</a>
 									<ul class="sub-menu">
-										<li><a href="Pre-Enrolment.html" class="tran3s">Pre-Enrolment</a></li>
+										<li><a href="#" class="subdropdown-holder tran3s">Pre-Enrolment</a>
+											<ul  class="sub-sub-menu" id="enrol-forms-sub-sub-menu">
+												<li><a href="forms-and-policies.html" class="sub-sub-item tran3s">Forms and Policies</a></li>
+											</ul> 
+										</li>
 										<li><a href="fees.html" class="tran3s">Fees</a></li>
 										<li><a href="enrolment-process.html" class="tran3s">Enrolment Process</a></li>
 										<li><a href="education-agents.html" class="tran3s">Education Agents</a></li>
@@ -148,14 +152,22 @@
 			</div> <!-- /.page-breadcrum -->
 			
 			<div class="education-agents">
-				<div class="under-construction-container">
+				<!-- <div class="under-construction-container">
 					<h3 class="under-construction-title">Page Under Construction</h3>
 					<p class="under-construction-body">This page is currently under construction and is being built to serve you better. We are working hard to bring you new and improved content. Please check back soon for updates.</p>
 					<p class="under-construction-body">In the meantime, feel free to explore the rest of our website or contact us directly for any inquiries. We appreciate your understanding and look forward to providing you with a better experience shortly.</p>
 					<p class="under-construction-body">Stay tuned!</p>
 					<p class="under-construction-body">Thank you for your patience!</p>
 					<a href="index.html" class="under-construction-home-button">Go to Home Page</a>
-				</div> 
+				</div>  -->
+
+				<div class="container">
+					<div class="pdf-container" onclick="openPDF('./Files/forms_and_policies/Agent_Application_Form_Fillable.pdf')">
+					  <h4>Academic Calendar 2024</h4>
+					  <!-- Placeholder for PDF rendering -->
+					  <canvas id="pdf-agent-form-2024" class="pdf-canvas" style="cursor: pointer;"></canvas>
+					</div>
+				</div>
 			</div>
 			
 
@@ -232,7 +244,37 @@
 
 
 		<!-- Js File_________________________________ -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
+		<script>
+			function loadAndRenderPDF(pdfUrl, canvasId, scale = 1.0) {
+				pdfjsLib.getDocument(pdfUrl).promise.then(pdfDoc => {
+					pdfDoc.getPage(1).then(page => {
+						const canvas = document.getElementById(canvasId);
+						const context = canvas.getContext('2d');
+						const viewport = page.getViewport({ scale });
+						canvas.width = viewport.width;
+						canvas.height = viewport.height;
+						const renderContext = {
+							canvasContext: context,
+							viewport: viewport
+						};
+						page.render(renderContext);
+					});
+				});
+			}
 
+			function openStudentPDF() {
+				window.open('Files/Pre-Enrolment-Files/Student Prospectus V1.0 2024.pdf', '_blank');
+			}
+
+			function openInternationalPDF() {
+				window.open('Files/Pre-Enrolment-Files/International Student Handbook v3.0.pdf', '_blank');
+			}
+
+			// Call the function for each PDF file with custom scale values
+			loadAndRenderPDF('./Files/forms_and_policies/Agent_Application_Form_Fillable.pdf', 'pdf-agent-form-2024', 0.7);
+			
+		</script>
 		<!-- j Query -->
 		<script type="text/javascript" src="vendor/jquery-2.1.4.js"></script>
 

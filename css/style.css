@@ -3752,6 +3752,7 @@ tr:nth-child(even) {
 }
 
 
+.forms-and-policies >.container 
 .pre-enrolment >.container {
   display: flex;
   flex-wrap: wrap;
