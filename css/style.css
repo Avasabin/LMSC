@@ -3621,6 +3621,7 @@ tr:nth-child(even) {
   vertical-align: middle; /* Align radio buttons vertically */
   
   
+  
 
 }
 
@@ -3629,12 +3630,17 @@ tr:nth-child(even) {
   margin-bottom: 4px; /* Adjust the spacing between radio buttons */
   vertical-align: middle; /* Align labels vertically */
   
+  
 }
 
 .radio-group input[type="radio"] + span {
   vertical-align: middle; /* Align labels vertically with radio buttons */
   line-height: 2;
+  
+  
 }
+
+
 
 
 
@@ -3643,15 +3649,15 @@ tr:nth-child(even) {
   width: 80px;
   height: 28px;
   margin-right: 5px;
-  background-color: white; /* Default background color */
-  color: black; /* Default text color */
+  background-color: #F6882F; /* Default background color */
+  color: white; /* Default text color */
   border: 1px solid #ccc; /* Default border color */
   border-radius: 3px; /* Add rounded corners */
 }
 
 /* Change background and text color on hover */
 #country_code:hover {
-  background-color: #F6882F; /* Background color on hover */
+  background-color: black; /* Background color on hover */
   color: white; /* Text color on hover */
 }
 
