@@ -415,12 +415,18 @@
         flex: 1 1 100%; /* Full width on smaller screens */
     }
 
-    .container .pdf-container h4{
-        font-size: 1.25rem;
+    .container .pdf-container .pdf-canvas {
+        width: 22em;
+        height: 37em; 
+        
     }
+    .container .pdf-container h4{
+        font-size: 2rem;
+    }
+
     .fees >.fees-container table{
         margin: 0 5%;
-       }
+    }
 
     .construction-content {
         padding: 20px;
