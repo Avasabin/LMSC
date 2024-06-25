@@ -3752,31 +3752,45 @@ tr:nth-child(even) {
 }
 
 
-.forms-and-policies > .container 
+.forms-and-policies > .container ,
 .pre-enrolment > .container {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  justify-content: flex-start;
+  gap: 3em;
+  margin: 2% auto; */
   margin: 2% auto;
-  
 }
 
-.container .pdf-container {
-  flex: 1 1 45%; /* Responsive flex property */
+.container .section-title {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 2em;
+}
+
+.pdf-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 3em;
+}
+.pdf-container {
+  /* flex: 1 1 45%; Responsive flex property */
   padding: 10px;
   box-sizing: border-box;
   text-align: center;
 }
 
-.container .pdf-container .pdf-canvas {
+
+
+.pdf-container .pdf-canvas {
   width: 180px; /* Set specific width */
   height: 260px; /* Set specific height */
   cursor: pointer;
   margin: 2% 0;
 }
 
-.container .pdf-container h4 {
+.pdf-container h4 {
   font-weight: 900;
   font-size: 1.5rem;
   margin-top: 1em;
