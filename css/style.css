@@ -939,7 +939,7 @@ word-spacing: 0.2em;
 }
 
 .main-menu-wrapper .nav>li.dropdown-holder .sub-menu li a.subdropdown-holder:after {
-  content: '>'; /* Indicator for sub-menu */
+  /* content: '>'; Indicator for sub-menu */
   position: absolute;
   right: 10px;
   top: 50%;
