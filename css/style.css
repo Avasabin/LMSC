@@ -1362,7 +1362,7 @@ word-spacing: 0.2em;
   border-color: #F6882F;
 }
 .popular-course .course-item-wrapper .text h4 a {
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   color:#333333;
   margin: 25px 0 18px 0;
 }
@@ -3752,6 +3752,7 @@ tr:nth-child(even) {
 }
 
 
+.education-agents > .container ,
 .forms-and-policies > .container ,
 .pre-enrolment > .container {
   /* display: flex;
@@ -3766,6 +3767,7 @@ tr:nth-child(even) {
   width: 100%;
   text-align: left;
   margin-bottom: 2em;
+  
 }
 
 .pdf-wrapper {
@@ -3773,6 +3775,11 @@ tr:nth-child(even) {
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 3em;
+}
+
+.pdf-wrapper .text p{
+  margin-bottom: 1em;
+  
 }
 .pdf-container {
   /* flex: 1 1 45%; Responsive flex property */
@@ -3797,6 +3804,10 @@ tr:nth-child(even) {
   word-wrap: break-word;
 }
 
+
+.education-agents .agent-text{
+  margin-bottom: 3.5%;
+}
 
 .fees >.fees-container {
   display: flex;
