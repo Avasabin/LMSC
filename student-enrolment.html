@@ -8,7 +8,7 @@
 		<!-- For Resposive Device -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>Forms and Policies - La Maison</title>
+		<title>Enrolment Application - La Maison</title>
 
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
@@ -130,7 +130,7 @@
 			<div class="inner-page-banner">
 				<div class="opacity">
 					<div class="container">
-						<h2>Forms and Policies</h2>
+						<h2>Enrolment Application</h2>
 					</div> <!-- /.container -->
 				</div> <!-- /.opacity -->
 			</div> <!-- /.inner-page-banner -->
@@ -141,7 +141,7 @@
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li>-</li>
-						<li>Forms and Policies</li>
+						<li>Enrolment Application</li>
 					</ul>
 				</div> <!-- /.container -->
 			</div> <!-- /.page-breadcrum -->
@@ -153,17 +153,6 @@
 				  <div class="title-underline"></div>
 				</div> -->
 				
-				<div class="pdf-wrapper">
-					<div class="pdf-container"  onclick="openEnrolApplicationPDF('./Files/forms_and_policies/Application_for_Enrolment_Form_Fillable.pdf')">
-						
-						<!-- Placeholder for PDF rendering -->
-						<canvas id="pdf-erol-form-2024" class="pdf-canvas" style="cursor: pointer;"></canvas>
-
-						<h4>Application for Enrolment Form 2024</h4>
-					</div>  
-                </div>
-
-
 				<div class="section-title">
 					<h2>Enrolment Application</h2>
 					<div class="title-underline"></div>
@@ -1117,35 +1106,7 @@
 
 
 		<!-- Js File_________________________________ -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
-		<script>
-			function loadAndRenderPDF(pdfUrl, canvasId, scale = 1.0) {
-				pdfjsLib.getDocument(pdfUrl).promise.then(pdfDoc => {
-					pdfDoc.getPage(1).then(page => {
-						const canvas = document.getElementById(canvasId);
-						const context = canvas.getContext('2d');
-						const viewport = page.getViewport({ scale });
-						canvas.width = viewport.width;
-						canvas.height = viewport.height;
-						const renderContext = {
-							canvasContext: context,
-							viewport: viewport
-						};
-						page.render(renderContext);
-					});
-				});
-			}
-
-			function openEnrolApplicationPDF(pdfUrl) {
-				window.open(pdfUrl, '_blank');
-			}
-
-			
-
-			// Call the function for each PDF file with custom scale values
-			loadAndRenderPDF('./Files/forms_and_policies/Application_for_Enrolment_Form_Fillable.pdf', 'pdf-erol-form-2024', 0.7);
-			
-		</script>
+        
 		<!-- j Query -->
 		<script type="text/javascript" src="vendor/jquery-2.1.4.js"></script>
 
