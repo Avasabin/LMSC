@@ -2392,16 +2392,21 @@ text-transform: uppercase;
 
 /* ###########Forms and policies########### */
 
+.agent-application .enrol-application-form .required,
 .forms-and-policies .enrol-application-form .required{
   color: red;
 }
 
+.agent-application .enrol-application-form .row,
 .forms-and-policies .enrol-application-form .row{
  margin:1% 0  ;
 }
+.agent-application .enrol-application-form .row label,
 .forms-and-policies .enrol-application-form .row label{
   margin-bottom: 1%;
- }
+}
+
+.agent-application .enrol-application-form h3,
 .forms-and-policies .enrol-application-form h3{
   font-size: 2rem;
   font-weight: 900;
@@ -2411,6 +2416,7 @@ text-transform: uppercase;
   text-align: left;
 }
 
+.agent-application .enrol-application-form h9,
 .forms-and-policies .enrol-application-form h9{
   font-size: 1.1rem;
   font-weight: 300;
@@ -2419,6 +2425,9 @@ text-transform: uppercase;
   margin-bottom: 1rem;
   text-align: left;
 }
+.agent-application .enrol-application-form input,
+.agent-application .enrol-application-form select,
+.agent-application .enrol-application-form textarea,
 .forms-and-policies .enrol-application-form input,
 .forms-and-policies .enrol-application-form select,
 .forms-and-policies .enrol-application-form textarea {
@@ -2429,6 +2438,8 @@ text-transform: uppercase;
   padding: 0 0.5rem 0 1rem;
   /* margin-bottom: 30px; */
 }
+
+.agent-application .enrol-application-form .radio-group ,
 .forms-and-policies .enrol-application-form .radio-group {
   display: flex;
   align-items: center;
@@ -2436,6 +2447,8 @@ text-transform: uppercase;
   height: 3em;
 }
 
+.agent-application .enrol-application-form .checkbox-group label,
+.agent-application .enrol-application-form .radio-group label,
 .forms-and-policies .enrol-application-form .checkbox-group label,
 .forms-and-policies .enrol-application-form .radio-group label{
   width: 48%;
@@ -2447,11 +2460,13 @@ text-transform: uppercase;
   
 }
 
+.agent-application .enrol-application-form input[type="radio"],
 .forms-and-policies .enrol-application-form input[type="radio"]{
   width: 20%;
   height: 80%;
   margin: auto 3%;
 }
+/* .agent-application .enrol-application-form input[type="checkbox"], */
 .forms-and-policies .enrol-application-form input[type="checkbox"]{
   width: 10%;
   height: 80%;
@@ -2459,24 +2474,41 @@ text-transform: uppercase;
 
 
 
+.agent-application .enrol-application-form select,
+.agent-application .enrol-application-form input ,
 .forms-and-policies .enrol-application-form select,
 .forms-and-policies .enrol-application-form input {
   height:3em;
 }
+
+
+.agent-application .enrol-application-form textarea ,
 .forms-and-policies .enrol-application-form textarea {
   height:5rem;
   max-width: 100%;
   padding: 1.5rem 1.5rem 0.9rem 1.9rem;
 }
+.agent-application input[type="text"],
 .form-check-label input[type="text"]{
   height: 3em;
 }
 
+.agent-application .agent_privacy_notice,
 .forms-and-policies .privacy_notice_list{
   list-style-type: disc;
   margin-left: 4%;
 }
 
+.agent-application .agent_privacy_notice li{
+  margin:1% 2% ;
+}
+
+.agent-application .education-agent-declaration input{
+  height: 1.5rem;
+}
+
+
+.agent-application .student-declaration-check-box p,
 .forms-and-policies .student-declaration-check-box p{
   height:50%;
   display: flex;
@@ -2484,15 +2516,22 @@ text-transform: uppercase;
   /* grid-column-gap: 4rem; */
   justify-content: flex-start;
 }
+
+
+.agent-application .student-declaration-check-box label,
 .forms-and-policies .student-declaration-check-box label{
   /* width: 80%; */
   display: inline-block;
 }
+
+
+.agent-application .student-declaration-check-box p>input,
 .forms-and-policies .student-declaration-check-box p>input{
   height: 80%;
   /* justify-self: stretch; */
 }
 
+.agent-application form > .row  button,
 .forms-and-policies form > .row  button{
   display: inline-block;
   width: 25rem;
