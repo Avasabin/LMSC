@@ -2399,11 +2399,13 @@ text-transform: uppercase;
 
 .agent-application .enrol-application-form .row,
 .forms-and-policies .enrol-application-form .row{
- margin:1% 0  ;
+ margin: 1.5% 0  ;
 }
 .agent-application .enrol-application-form .row label,
 .forms-and-policies .enrol-application-form .row label{
   margin-bottom: 1%;
+  margin-top: 2%;
+
 }
 
 .agent-application .enrol-application-form h3,
@@ -2414,7 +2416,12 @@ text-transform: uppercase;
   margin-top:1.5rem ;
   margin-bottom: 1rem;
   text-align: left;
+  background-color: #f6882f;
+  padding: 0.9% 0;
+  padding-left: 1.2%;
 }
+
+
 
 .agent-application .enrol-application-form h9,
 .forms-and-policies .enrol-application-form h9{
@@ -2503,10 +2510,23 @@ text-transform: uppercase;
   margin:1% 2% ;
 }
 
-.agent-application .education-agent-declaration input{
-  height: 1.5rem;
+
+.agent-application .education-agent-declaration div{
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items:; */
+  align-items: center;
 }
 
+
+.agent-application .education-agent-declaration input{
+  height: 1.5rem;
+  width: 10%;
+}
+.agent-application .education-agent-declaration label{
+  width: 90%;
+  margin-top: 0%;
+}
 
 .agent-application .student-declaration-check-box p,
 .forms-and-policies .student-declaration-check-box p{
@@ -3842,16 +3862,10 @@ tr:nth-child(even) {
 
 
 /* ##############Fees CSS########################### */
-.fees-container {
-  max-width: 200%; /* Adjust the percentage as needed */
-  padding: 10px;
-  margin: 4 auto;
-}
+
 
 /* General content styling */
-.fees-description {
-  margin: 20px 0;
-}
+
 
 .fees-description p,
 .fees-description ul,
@@ -4009,28 +4023,18 @@ select {
 
 .fees >.fees-container {
   display: flex;
-  justify-content: end;
+  justify-content: stretch;
   align-items: center;
   flex-direction: column;
   width: 100%;
-}
+  align-content:stretch ;
+}   
 
 .fees-container .section-title{
   margin-top: 3%;
 }
-.fees >.fees-container > .fees-description{
-  width: 60%;
-  /* background-color:#f5f5f5;
-  padding: 2% 1.5%;
-  border-radius: 2rem ; */
-  margin-bottom: 5%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 
-}
-
-.fees >.fees-container .fee-section{
+.fees  .fee-section{
   background-color:#f5f5f5;
   padding: 3% 4%;
   border-radius: 0.5rem ;
@@ -4065,35 +4069,34 @@ select {
   list-style: disc;
 }
 
-.fees >.fees-container ul li::marker{
+.fees ul li::marker{
   font-size: 110%;
   
 }
 
 
-.fees >.fees-container table{
+.fees  table{
   
   font-family: 'Lato',sans-serif;
-  
   width: auto;
 }
-.fees >.fees-container table ,tr,td ,thead{
+.fees table ,tr,td ,thead{
   border: 3px solid rgb(77, 73, 73);
   border-collapse: collapse;
 }
 
-.fees >.fees-container table thead{
+.fees  table thead{
   background-color: #F6882F ;
   color: #ffffff ;
   font-size: 105%;
   font-weight: 700;
 }
 
-.fees >.fees-container table td{
+.fees  table td{
   padding: 1% 1%;
   font-size:100% ;
 }
-.fees >.fees-container table .col1{
+.fees  table .col1{
   width: 75%;
 }
 

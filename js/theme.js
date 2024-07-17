@@ -157,30 +157,30 @@ function themeSlider () {
 
 
 // Google Map 
-function googlMap () {
-  if($("#google-map").length) {
-    var settingsItemsMap = {
-          zoom: 12,
-          center: new google.maps.LatLng(40.925372, -74.276544),
-          zoomControlOptions: {
-            style: google.maps.ZoomControlStyle.LARGE
-          },
-          scrollwheel: false,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-      };
-      var map = new google.maps.Map(document.getElementById('google-map'), settingsItemsMap );
-      var image = 'images/logo/map.png';
-      var myMarker = new google.maps.Marker({
-          position: new google.maps.LatLng(40.925372, -74.276544),
-          draggable: true,
-          icon: image
-      });
+// function googlMap () {
+//   if($("#google-map").length) {
+//     var settingsItemsMap = {
+//           zoom: 12,
+//           center: new google.maps.LatLng(40.925372, -74.276544),
+//           zoomControlOptions: {
+//             style: google.maps.ZoomControlStyle.LARGE
+//           },
+//           scrollwheel: false,
+//           mapTypeId: google.maps.MapTypeId.ROADMAP
+//       };
+//       var map = new google.maps.Map(document.getElementById('google-map'), settingsItemsMap );
+//       var image = 'images/logo/map.png';
+//       var myMarker = new google.maps.Marker({
+//           position: new google.maps.LatLng(40.925372, -74.276544),
+//           draggable: true,
+//           icon: image
+//       });
 
-      map.setCenter(myMarker.position);
-      myMarker.setMap(map);
-      // Google map 
-  };
-}
+//       map.setCenter(myMarker.position);
+//       myMarker.setMap(map);
+//       // Google map 
+//   };
+// }
 
 // Counter function
 function CounterNumberChanger () {
@@ -341,7 +341,7 @@ jQuery(document).on('ready', function() {
      wowAnimation ();
      themeSlider ();
      CounterNumberChanger ();
-     googlMap ();
+    //  googlMap ();
      scrollToTop ();
      contactFormValidation ();
      closeSuccessAlert ();
