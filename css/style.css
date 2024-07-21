@@ -3057,13 +3057,13 @@ text-transform: uppercase;
 }
 .course-v2 .single-course .img-holder {
   width: 100%; /* Make it responsive */
-  height: 10%;
+  height: 20%;
   overflow: hidden;
 }
 
 .course-v2 .single-course .img-holder img {
   width: 100%; /* Fill the container */
-  height: auto; /* Maintain the aspect ratio */
+  height: 0; /* Maintain the aspect ratio */
   transition: transform 0.3s ease; /* Smooth transition for the hover effect */
 }
 .course-v2 .single-course:hover .img-holder img {
